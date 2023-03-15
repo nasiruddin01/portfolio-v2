@@ -18,9 +18,9 @@ defineProps({
 
 <template>
   <div class="not-prose relative pt-14 pb-10 lg:mt-32 lg:pb-24">
-    <div class="absolute top-0 left-0 pointer-events-none w-full text-clip overflow-hidden" :class="[orientation === 'center' ? 'flex justify-center' : '']" v-parallax data-rellax-speed="4">
+    <!-- <div class="absolute top-0 left-0 pointer-events-none w-full text-clip overflow-hidden" :class="[orientation === 'center' ? 'flex justify-center' : '']" v-parallax data-rellax-speed="4">
       <span class="text-[9rem] lg:text-[10rem] font-display text-zinc-900 dark:text-zinc-50 opacity-2 truncate">{{ title }}</span>
-    </div>
+    </div> -->
     <div>
       <template v-if="orientation === 'left'">
         <div class="max-w-xl">

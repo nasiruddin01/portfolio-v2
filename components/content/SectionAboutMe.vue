@@ -20,13 +20,12 @@ defineProps({
     <div class="grid grid-cols-1 lg:grid-cols-7 gap-8">
       <div class="col-span-4 flex flex-col gap-8 order-2 lg:order-1">
         <h2 class="text-4xl lg:text-6xl font-display text-zinc-800 dark:text-zinc-200">
-          {{ firstname }} <br />
+          {{ firstname }} 
           {{ lastname }}
         </h2>
         <div class="dark:text-zinc-400 flex flex-col gap-4">
           <slot name="description"></slot>
         </div>
-        <NuxtImg src="/img/home/sign.png" alt="signature" class="h-8 mr-auto" />
       </div>
 
       <div v-parallax 
@@ -50,18 +49,17 @@ defineProps({
       </div>
     </div>
 
-    <hr class="my-10 h-px border-0 bg-zinc-200 dark:bg-zinc-800" />
+   
     <slot name="extra"></slot>
   </div>
 </template>
 <style scoped>
-.rotate{
-  rotate: 270deg;
-  object-fit: cover;
-  
-}
+
 img{
   width:100%;
 
+}
+hr,.__web-inspector-hide-shortcut__{
+  display: none !important;
 }
 </style>

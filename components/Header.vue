@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const links = [
-  { name: "Home", to: "/" },
-  { name: "Hire me", to: "/hire-me" },
+ 
+
 ] as { name: string; to: string }[];
 
 onMounted(() => {
@@ -40,7 +40,7 @@ const onScroll = () => {
       <div class="flex items-center justify-between">
         <Logo />
         <div
-          class="border border-zinc-300/50 dark:border-zinc-900/60 rounded-full pl-2 lg:pl-4 pr-2 py-2 backdrop-blur-lg bg-zinc-100/50 dark:bg-zinc-800/50"
+        
         >
           <div class="flex items-center gap-4">
             <div class="hidden lg:block">
