@@ -14,21 +14,21 @@
         </div>
         <ul class="mt-16 flex flex-col gap-4 lg:gap-12 lg:flex-row items-center justify-center max-w-2xl mx-auto">
           <li>
-            <NuxtLink to="mailto:oscar@mattern.com" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100">
+            <NuxtLink to="mailto:nasiruddin.dev@gmailcom" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100">
               <Icon name="heroicons:envelope-20-solid" size="1.8rem" />
-              <span>oscar@mattern.com</span>
+              <span>nasiruddin.dev@gmailcom</span>
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="https://instagram.org" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100">
+            <NuxtLink to="https://www.instagram.com/nasiruddin.md/" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100">
               <Icon name="fe:instagram" size="1.8rem" />
-              <span>oscarphotography</span>
+              <span>nasiruddin.md</span>
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="https://instagram.org" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100">
+            <NuxtLink to="https://twitter.com/nasir_uddin01" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100">
               <Icon name="fe:twitter" size="1.8rem" />
-              <span>oscarphotography</span>
+              <span>nasir_uddin01</span>
             </NuxtLink>
           </li>
         </ul>
@@ -56,7 +56,7 @@
     <div class="dark:text-zinc-500 pb-16 mt-16">
       <div class="text-center">
         <!-- copyright -->
-        <p class="text-sm">&copy; {{ new Date().getFullYear() }} <NuxtLink to="/" class="text-zinc-500 hover:text-zinc-400">Oscar Mattern</NuxtLink>, All rights reserved.</p>
+        <p class="text-sm">&copy; {{ new Date().getFullYear() }} <NuxtLink to="/" class="text-zinc-500 hover:text-zinc-400">Nasher Uddin</NuxtLink>, All rights reserved.</p>
       </div>
     </div>
   </Container>

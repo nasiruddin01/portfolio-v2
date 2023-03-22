@@ -62,4 +62,7 @@ img{
 hr,.__web-inspector-hide-shortcut__{
   display: none !important;
 }
+.maya-prose :where(hr):not(:where([class~="not-prose"] *)){
+   display: none !important;
+}
 </style>
