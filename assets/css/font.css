@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+
+.font-display {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.font-mono {
+    font-family: 'Space Mono', monospace;
+}
+
+.font-code {
+    font-family: 'VT323', monospace;
+}
