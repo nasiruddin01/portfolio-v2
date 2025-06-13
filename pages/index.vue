@@ -99,9 +99,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div v-for="project in projects" :key="project.name"
                     class="group relative p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-                    <h3 class="text-2xl font-bold font-code text-white mb-3">
-                        {{ project.name }}
-                    </h3>
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-2xl font-bold font-code text-white">
+                            {{ project.name }}
+                        </h3>
+                        <a :href="project.link" target="_blank"
+                            class="text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
                     <p class="text-gray-300 font-mono mb-4">{{ project.description }}</p>
                     <div class="flex flex-wrap gap-2">
                         <span v-for="tag in project.tags" :key="tag"
@@ -148,37 +158,49 @@
         {
             name: 'Vocalo.ai',
             description: 'Gamify language learning with immersive AI conversations, personalised curriculum, and real-time comprehensive feedback.',
-            tags: ['LLM', 'OpenAI', 'TTS', 'STT']
+            tags: ['LLM', 'OpenAI', 'TTS', 'STT'],
+            link: 'https://vocalo.ai'
         },
         {
             name: 'SketchToImage',
             description: 'Turn simple sketches into stunning, photorealistic artwork using AI diffusion models.',
-            tags: ['Stable Diffusion', 'ControlNet', 'Image To Video']
+            tags: ['Stable Diffusion', 'ControlNet', 'Image To Video'],
+            link: 'https://sketchtoimage.com'
         },
         {
             name: 'HeyLuna.ai',
             description: 'Experience natural conversations with an expressive 3D AI assistant that sees, hears, and understands.',
-            tags: ['LLM', 'RAG', 'Vector DB', 'Chatbot']
+            tags: ['LLM', 'RAG', 'Vector DB', 'Chatbot'],
+            link: 'https://heyluna.ai'
         },
         {
             name: 'PhotoFoxAI',
             description: 'Generate professional-quality product photography and content without traditional photography equipment.',
-            tags: ['Flux', 'Diffusion', 'Image To Image']
+            tags: ['Flux', 'Diffusion', 'Image To Image'],
+            link: 'https://photofoxai.com'
+        }, {
+            name: "QuizMaker.ai",
+            description: "Create interactive quizzes and tests with AI-powered question generation and evaluation.",
+            tags: ['LLM', 'OpenAI', 'Claude', 'Content Engine'],
+            link: 'https://quizmaker.ai'
         },
         {
             name: 'AiStoryGen',
             description: 'Craft immersive stories with AI-generated narratives, visuals, and audio experiences.',
-            tags: ['LLM', 'Diffusion', 'Synthetix']
-        },
-        {
-            name: 'Wordrocket.ai',
-            description: 'Create professional content across text, image, video, and audio with one powerful AI platform.',
-            tags: ['LLM', 'OpenAI', 'Claude', 'Content Engine']
+            tags: ['LLM', 'Diffusion', 'Synthetix'],
+            link: 'https://aistorygen.org'
         },
         {
             name: 'InvoiceAgent.ai',
             description: 'AI-powered invoice automation tool that extracts, processes, and manages invoices from emails and manual uploads with 99.9% accuracy.',
-            tags: ['OpenAI', 'OAuth2', 'VectorDB', 'NLP Search', 'Real-time']
+            tags: ['OpenAI', 'OAuth2', 'VectorDB', 'NLP Search', 'Real-time'],
+            link: 'https://invoiceagent.ai'
+        },
+        {
+            name: 'Wordrocket.ai',
+            description: 'Create professional content across text, image, video, and audio with one powerful AI platform.',
+            tags: ['LLM', 'OpenAI', 'Claude', 'Content Engine'],
+            link: 'https://wordrocket.ai'
         }
     ];
 
