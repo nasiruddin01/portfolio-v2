@@ -27,11 +27,16 @@
                     </a>
 
 
-                    <p class="text-white text-sm font-display mt-2">
+                    <p class="text-white text-sm font-mono mt-2">
                         <span v-if="!isDescriptionComplete">{{ displayDescription }}<span
                                 class="animate-blink">|</span></span>
                         <span v-else>I'm a software engineer and entrepreneur with a passion for building products that
-                            help people live better lives.</span>
+                            help people live better lives. With a unique journey from civil engineering to tech
+                            entrepreneurship, I bring a fresh perspective to software development. As a co-founder of
+                            <a href="https://connekt.studio/" target="_blank" rel="noopener noreferrer">CONNEKT
+                                STUDIO</a>, I specialize in creating AI-powered solutions that solve real-world
+                            problems. I'm particularly passionate about leveraging AI to create innovative digital
+                            experiences that make a meaningful impact.</span>
                     </p>
                 </div>
 
@@ -324,10 +329,6 @@
 
 <script setup>
 
-
-
-
-
     const projects = [
         {
             name: 'Vocalo.ai',
@@ -432,7 +433,8 @@
     const isLinkComplete = ref(false)
 
     const fullText = "Hi, I'm Nasher Uddin"
-    const fullDescription = "I'm a software engineer and entrepreneur with a passion for building products that help people live better lives."
+    const fullDescription = "I'm a software engineer and entrepreneur with a passion for building products that help people live better lives. With a unique journey from civil engineering to tech entrepreneurship, I bring a fresh perspective to software development. As a co-founder of CONNEKT STUDIO, I specialize in creating AI-powered solutions that solve real-world problems. I'm particularly passionate about leveraging AI to create innovative digital experiences that make a meaningful impact."
+
     const fullTitle = "Engineer & Entrepreneur"
     const fullLink = "Connekt Studio"
 
