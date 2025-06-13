@@ -4,15 +4,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
   app: {
-    // head: {
-    //   link: [
-    //     {
-    //       rel: "stylesheet",
-    //       href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
-    //     },
-    //   ],
-    // },
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap",
+        },
+      ],
+    },
   },
   css: ["~/assets/css/font.css"],
   plugins: ["~/plugins/heroicons.client.js"],
+  build: {
+    transpile: ["@heroicons/vue"],
+  },
 });

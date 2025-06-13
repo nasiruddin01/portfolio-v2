@@ -3,42 +3,34 @@
         <!-- Hero Section -->
         <div class=" mx-auto px-4 py-20 h-screen flex items-center justify-center relative overflow-hidden">
             <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
-                <!-- Image with gradient border -->
-                <div class="h-[400px] w-[400px] rounded-none overflow-hidden  flex items-center justify-center">
-                    <div class="w-full h-full flex items-center justify-center">
-                        <img src="/nasir-dotted.png" alt="Profile" class="w-full h-full object-cover">
-                    </div>
+                <div class="w-1/2 rounded-none overflow-hidden flex items-center justify-center">
+
+                    <img src="/nasir-dotted.png" alt="Profile" class="w-[80%] h-[80%] object-cover">
+
                 </div>
 
                 <!-- Text content -->
-                <div class="flex-1 text-center md:text-left">
-
-
-                    <h1 class="text-5xl md:text-6xl font-bold font-code text-white">
-                        Nasher Uddin
+                <div class="w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold text-white font-code">
+                        Hi, I'm Nasher Uddin
                     </h1>
-                    <h2 class="text-3xl font-bold font-code text-white mt-4">
+                    <h2 class="text-4xl font-bold font-code text-white mt-2 !font-code">
                         Engineer & Entrepreneur
                     </h2>
-                    <h3 class="text-2xl font-bold font-code text-white mt-4">
-                        Connekt Studio
-                    </h3>
 
-                    <p class="mt-6 text-xl text-gray-300 max-w-2xl">
-                        Building cutting-edge AI products specializing in LLM, Voice AI, Vision AI, and Diffusion
-                        models.
-                        Leading a team of expert designers, developers, and product managers in developing innovative
-                        GenAI solutions
-                        for startups and enterprises worldwide.
+                    <a href="https://connekt.studio/" target="_blank"
+                        class="text-2xl font-bold font-code text-white mt-2 !font-['VT323']">Connekt
+                        Studio</a>
+
+
+                    <p class="text-white text-sm font-display mt-2">
+                        I'm a software engineer and entrepreneur with a passion for building products that help people
+                        live better lives.
                     </p>
-                    <!-- Optional: Add a CTA button -->
-                    <div class="mt-8">
-                        <a href="#contact"
-                            class="inline-block px-8 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 font-medium shadow-lg hover:shadow-xl">
-                            Get in Touch
-                        </a>
-                    </div>
                 </div>
+
+
+
             </div>
             <!-- Equalizer Animation -->
             <div class="absolute left-0 bottom-0 w-[100vw] flex justify-center pointer-events-none z-20">
@@ -113,7 +105,8 @@
                     <h3
                         class="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
                         Vocalo.ai</h3>
-                    <p class="text-gray-300 mb-4">Gamify language learning with immersive AI conversations, personalised
+                    <p class="text-gray-300 mb-4">Gamify language learning with immersive AI conversations,
+                        personalised
                         curriculum, and real-time comprehensive feedback.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">LLM</span>
@@ -129,7 +122,8 @@
                     <h3
                         class="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
                         SketchToImage</h3>
-                    <p class="text-gray-300 mb-4">Turn simple sketches into stunning, photorealistic artwork using AI
+                    <p class="text-gray-300 mb-4">Turn simple sketches into stunning, photorealistic artwork using
+                        AI
                         diffusion models.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">Stable
@@ -146,7 +140,8 @@
                     <h3
                         class="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
                         HeyLuna.ai</h3>
-                    <p class="text-gray-300 mb-4">Experience natural conversations with an expressive 3D AI assistant
+                    <p class="text-gray-300 mb-4">Experience natural conversations with an expressive 3D AI
+                        assistant
                         that sees, hears, and understands.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">LLM</span>
@@ -162,7 +157,8 @@
                     <h3
                         class="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
                         PhotoFoxAI</h3>
-                    <p class="text-gray-300 mb-4">Generate professional-quality product photography and content without
+                    <p class="text-gray-300 mb-4">Generate professional-quality product photography and content
+                        without
                         traditional photography equipment.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">Flux</span>
@@ -193,7 +189,8 @@
                     <h3
                         class="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
                         Wordrocket.ai</h3>
-                    <p class="text-gray-300 mb-4">Create professional content across text, image, video, and audio with
+                    <p class="text-gray-300 mb-4">Create professional content across text, image, video, and audio
+                        with
                         one powerful AI platform.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">LLM</span>
@@ -216,7 +213,8 @@
                         <span class="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">OpenAI</span>
                         <span class="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300">OAuth2</span>
                         <span class="px-3 py-1 rounded-full text-sm bg-green-500/20 text-green-300">VectorDB</span>
-                        <span class="px-3 py-1 rounded-full text-sm bg-yellow-500/20 text-yellow-300">NLP Search</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-yellow-500/20 text-yellow-300">NLP
+                            Search</span>
                         <span class="px-3 py-1 rounded-full text-sm bg-pink-500/20 text-pink-300">Real-time</span>
                     </div>
                 </div>
@@ -299,4 +297,19 @@
     ])
 </script>
 
-<style></style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+
+    .font-code {
+        font-family: 'VT323', monospace;
+    }
+
+    .font-display {
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .font-mono {
+        font-family: 'Space Mono', monospace;
+    }
+
+</style>
