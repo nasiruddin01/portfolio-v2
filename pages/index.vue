@@ -12,7 +12,8 @@
                 <!-- Text content -->
                 <div class="w-1/2 text-center md:text-left">
                     <h1 class="text-5xl md:text-6xl font-bold text-white font-code">
-                        Hi, I'm Nasher Uddin
+                        <span v-if="!isTypingComplete">{{ displayText }}<span class="animate-blink">|</span></span>
+                        <span v-else>Hi, I'm Nasher Uddin</span>
                     </h1>
                     <h2 class="text-4xl font-bold font-code text-white mt-2 !font-code">
                         Engineer & Entrepreneur
@@ -218,6 +219,24 @@
             icon: 'CommandLineIcon'
         }
     ]);
+
+    const displayText = ref('')
+    const isTypingComplete = ref(false)
+    const fullText = "Hi, I'm Nasher Uddin"
+    let currentIndex = 0
+
+    onMounted(() => {
+        const typeText = () => {
+            if (currentIndex < fullText.length) {
+                displayText.value += fullText[currentIndex]
+                currentIndex++
+                setTimeout(typeText, 100) // Adjust speed here (100ms)
+            } else {
+                isTypingComplete.value = true
+            }
+        }
+        typeText()
+    })
 </script>
 
 <style>
@@ -235,4 +254,19 @@
         font-family: 'Space Mono', monospace;
     }
 
+    @keyframes blink {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .animate-blink {
+        animation: blink 1s infinite;
+    }
 </style>
