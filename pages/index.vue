@@ -16,17 +16,22 @@
                         <span v-else>Hi, I'm Nasher Uddin</span>
                     </h1>
                     <h2 class="text-4xl font-bold font-code text-white mt-2 !font-code">
-                        Engineer & Entrepreneur
+                        <span v-if="!isTitleComplete">{{ displayTitle }}<span class="animate-blink">|</span></span>
+                        <span v-else>Engineer & Entrepreneur</span>
                     </h2>
 
                     <a href="https://connekt.studio/" target="_blank"
-                        class="text-2xl font-bold font-code text-white mt-2 !font-['VT323']">Connekt
-                        Studio</a>
+                        class="text-2xl font-bold font-code text-white mt-2 !font-['VT323']">
+                        <span v-if="!isLinkComplete">{{ displayLink }}<span class="animate-blink">|</span></span>
+                        <span v-else>Connekt Studio</span>
+                    </a>
 
 
                     <p class="text-white text-sm font-display mt-2">
-                        I'm a software engineer and entrepreneur with a passion for building products that help people
-                        live better lives.
+                        <span v-if="!isDescriptionComplete">{{ displayDescription }}<span
+                                class="animate-blink">|</span></span>
+                        <span v-else>I'm a software engineer and entrepreneur with a passion for building products that
+                            help people live better lives.</span>
                     </p>
                 </div>
 
@@ -43,7 +48,7 @@
 
         <div class="container mx-auto px-4 py-16">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold font-code text-white mb-4">
+                <h2 class="text-4xl font-display font-bold text-white mb-4">
                     Achievements
                 </h2>
                 <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">
@@ -86,7 +91,7 @@
         <!-- Projects Section -->
         <div class="container mx-auto px-4 py-16">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold font-code text-white mb-4">Projects</h2>
+                <h2 class="text-4xl font-display font-bold text-white mb-4">Projects</h2>
                 <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">
                     A collection of my work, showcasing my skills and expertise
                 </p>
@@ -221,20 +226,69 @@
     ]);
 
     const displayText = ref('')
+    const displayDescription = ref('')
+    const displayTitle = ref('')
+    const displayLink = ref('')
+
     const isTypingComplete = ref(false)
+    const isDescriptionComplete = ref(false)
+    const isTitleComplete = ref(false)
+    const isLinkComplete = ref(false)
+
     const fullText = "Hi, I'm Nasher Uddin"
+    const fullDescription = "I'm a software engineer and entrepreneur with a passion for building products that help people live better lives."
+    const fullTitle = "Engineer & Entrepreneur"
+    const fullLink = "Connekt Studio"
+
     let currentIndex = 0
+    let descriptionIndex = 0
+    let titleIndex = 0
+    let linkIndex = 0
 
     onMounted(() => {
         const typeText = () => {
             if (currentIndex < fullText.length) {
                 displayText.value += fullText[currentIndex]
                 currentIndex++
-                setTimeout(typeText, 100) // Adjust speed here (100ms)
+                setTimeout(typeText, 100)
             } else {
                 isTypingComplete.value = true
+                typeTitle()
             }
         }
+
+        const typeTitle = () => {
+            if (titleIndex < fullTitle.length) {
+                displayTitle.value += fullTitle[titleIndex]
+                titleIndex++
+                setTimeout(typeTitle, 100)
+            } else {
+                isTitleComplete.value = true
+                typeLink()
+            }
+        }
+
+        const typeLink = () => {
+            if (linkIndex < fullLink.length) {
+                displayLink.value += fullLink[linkIndex]
+                linkIndex++
+                setTimeout(typeLink, 100)
+            } else {
+                isLinkComplete.value = true
+                typeDescription()
+            }
+        }
+
+        const typeDescription = () => {
+            if (descriptionIndex < fullDescription.length) {
+                displayDescription.value += fullDescription[descriptionIndex]
+                descriptionIndex++
+                setTimeout(typeDescription, 30)
+            } else {
+                isDescriptionComplete.value = true
+            }
+        }
+
         typeText()
     })
 </script>
