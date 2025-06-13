@@ -6,7 +6,7 @@
                 height: '12px',
                 marginBottom: '6px',
                 background: capsule.color,
-                opacity: capsule.active ? 1 : 0.15,
+                opacity: capsule.active ? 0.8 : 0.15,
                 transition: 'opacity 0.2s, background 0.2s'
             }"></div>
         </div>
@@ -17,16 +17,16 @@
     import { ref, onMounted, onBeforeUnmount } from 'vue'
 
     const colors = [
-        '#A78BFA', // purple
-        '#FDE68A', // yellow
-        '#6EE7B7', // green
-        '#FCA5A5', // red
-        '#93C5FD', // blue
-        '#F9A8D4', // pink
-        '#FCD34D', // gold
-        '#F87171', // orange
-        '#C4B5FD', // light purple
-        '#F3F4F6', // white
+        'rgba(255, 255, 255, 0.9)',  // white 90%
+        'rgba(255, 255, 255, 0.8)',  // white 80%
+        'rgba(255, 255, 255, 0.7)',  // white 70%
+        'rgba(255, 255, 255, 0.6)',  // white 60%
+        'rgba(255, 255, 255, 0.5)',  // white 50%
+        'rgba(255, 255, 255, 0.4)',  // white 40%
+        'rgba(255, 255, 255, 0.3)',  // white 30%
+        'rgba(255, 255, 255, 0.2)',  // white 20%
+        'rgba(255, 255, 255, 0.1)',  // white 10%
+        'rgba(255, 255, 255, 0.05)', // white 5%
     ]
 
     const barCount = 84
