@@ -250,52 +250,84 @@
 
         <div class="container mx-auto px-4 py-16">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold font-code text-white mb-4">Latest Articles</h2>
-                <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">Thoughts on AI & Development</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
-                    <span class="text-purple-400 font-mono">AI Development</span>
-                    <h3 class="text-2xl font-code text-white mt-2">The Future of AI in Web Development</h3>
-                    <p class="text-gray-300 font-mono mt-2">Exploring how AI is transforming the way we build web
-                        applications...</p>
-                    <a href="#" class="inline-block mt-4 text-purple-400 font-mono hover:text-purple-300">Read More
-                        →</a>
-                </div>
-                <!-- Add more articles -->
-            </div>
-        </div>
-
-        <div class="container mx-auto px-4 py-16">
-            <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold font-code text-white mb-4">Get in Touch</h2>
                 <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">Let's work together</p>
+
+                <!-- Social Media Links -->
+
             </div>
             <div class="max-w-2xl mx-auto">
-                <form class="space-y-6">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6" @submit="handleSubmit">
+                    <input type="hidden" name="access_key" value="5fffc86b-15f6-4f81-9a4c-9fee9d5f4b06">
+
                     <div>
-                        <input type="text" placeholder="Name"
-                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500">
+                        <input name="name" type="text" placeholder="Name"
+                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500"
+                            required>
                     </div>
                     <div>
-                        <input type="email" placeholder="Email"
-                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500">
+                        <input name="email" type="email" placeholder="Email"
+                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500"
+                            required>
                     </div>
                     <div>
-                        <textarea placeholder="Message" rows="4"
-                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500"></textarea>
+                        <textarea name="message" placeholder="Message" rows="4"
+                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500"
+                            required></textarea>
                     </div>
-                    <button
-                        class="w-full p-4 rounded-none bg-purple-500 text-white font-code hover:bg-purple-600 transition-colors">Send
-                        Message</button>
+                    <button type="submit"
+                        class="w-full p-4 rounded-none bg-white/10 backdrop-blur-md border border-white/20 text-white font-code hover:bg-white/20 transition-all duration-300 text-xl shadow-lg hover:shadow-xl">
+                        Send Message
+                    </button>
                 </form>
             </div>
         </div>
+        <div class="container mx-auto px-4 py-8">
+            <div class="max-w-4xl mx-auto">
+                <!-- Social Links with Glassmorphism -->
+                <div class="flex justify-center gap-6 mt-8">
+                    <a href="https://github.com/nasiruddin01" target="_blank"
+                        class="text-white hover:text-purple-500 transition-all duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/nasir01/" target="_blank"
+                        class="text-white hover:text-purple-500 transition-all duration-300">
 
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/nasir_uddin01" target="_blank"
+                        class="text-white hover:text-purple-500 transition-all duration-300">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com/md.nasir.uddin1995/" target="_blank"
+                        class="text-white hover:text-purple-500 transition-all duration-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com/nasiruddin.md" target="_blank"
+                        class="text-white hover:text-purple-500 transition-all duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+
+                <!-- Copyright Text -->
+                <div class="text-center mt-8">
+                    <p class="text-gray-400 font-mono text-sm">
+                        © 2025 Nasher Uddin. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 </template>
 
 <script setup>
+
+
+
+
+
     const projects = [
         {
             name: 'Vocalo.ai',
@@ -454,6 +486,68 @@
         }
 
         typeText()
+    })
+
+    const handleSubmit = async (e) => {
+        const form = e.target;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+
+            if (data.success) {
+                alert('Message sent successfully!');
+                form.reset();
+            } else {
+                alert('Error sending message. Please try again.');
+            }
+        } catch (error) {
+            alert('Error sending message. Please try again.');
+        }
+    };
+
+    // Add this to your head section or nuxt.config.ts
+    useHead({
+        title: 'Nasir Uddin | Full Stack Developer & AI Enthusiast',
+        meta: [
+            // Primary Meta Tags
+            { name: 'title', content: 'Nasir Uddin | Full Stack Developer & AI Enthusiast' },
+            { name: 'description', content: 'Full Stack Developer with 3+ years of experience in AI-powered solutions. Co-founder of CONNEKT STUDIO, specializing in Vue.js, Nuxt.js, and modern web technologies. Expert in building scalable applications, AI integration, and creating innovative digital experiences. From civil engineering to tech entrepreneurship, bringing unique problem-solving perspectives to software development.' },
+
+            // Open Graph / Facebook
+            { property: 'og:type', content: 'website' },
+            { property: 'og:url', content: 'https://nasheruddin.com/' },
+            { property: 'og:title', content: 'Nasir Uddin | Full Stack Developer & AI Enthusiast' },
+            { property: 'og:description', content: 'Full Stack Developer with 3+ years of experience in AI-powered solutions. Co-founder of CONNEKT STUDIO, specializing in Vue.js, Nuxt.js, and modern web technologies. Expert in building scalable applications, AI integration, and creating innovative digital experiences. From civil engineering to tech entrepreneurship, bringing unique problem-solving perspectives to software development.' },
+            { property: 'og:image', content: 'https://nasheruddin.com/nasir-dotted.png' },
+
+            // Twitter
+            { property: 'twitter:card', content: 'summary_large_image' },
+            { property: 'twitter:url', content: 'https://nasheruddin.com/' },
+            { property: 'twitter:title', content: 'Nasir Uddin | Full Stack Developer & AI Enthusiast' },
+            { property: 'twitter:description', content: 'Full Stack Developer with 3+ years of experience in AI-powered solutions. Co-founder of CONNEKT STUDIO, specializing in Vue.js, Nuxt.js, and modern web technologies. Expert in building scalable applications, AI integration, and creating innovative digital experiences. From civil engineering to tech entrepreneurship, bringing unique problem-solving perspectives to software development.' },
+            { property: 'twitter:image', content: 'https://nasheruddin.com/nasir-dotted.png' },
+
+            // Additional Meta Tags
+            { name: 'keywords', content: 'Full Stack Developer, AI Developer, Vue.js, Nuxt.js, Web Development, CONNEKT STUDIO, JavaScript, TypeScript, AI Integration, Software Development, Tech Entrepreneurship, Civil Engineering, Problem Solving, Scalable Applications, Modern Web Technologies, Frontend Development, Backend Development, AI Solutions, Digital Innovation' },
+            { name: 'author', content: 'Nasher Uddin' },
+            { name: 'robots', content: 'index, follow' },
+            { name: 'language', content: 'English' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+
+            // Canonical URL
+            { rel: 'canonical', href: 'https://nasheruddin.com/' }
+        ],
+        link: [
+            // Favicon
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            // Font Awesome
+            { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' }
+        ]
     })
 </script>
 
