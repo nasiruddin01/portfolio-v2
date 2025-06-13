@@ -150,6 +150,148 @@
             </div>
         </div>
 
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-code text-white mb-4">My Journey</h2>
+                <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">From Civil Engineering to Tech
+                    Entrepreneurship</p>
+            </div>
+            <div class="space-y-8">
+                <!-- Civil Engineering Background -->
+
+
+                <!-- Static Fit -->
+                <div class="relative pl-8 border-l-2 border-purple-500/30">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                    <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                        <h3 class="text-2xl font-code text-white">Static Fit</h3>
+                        <p class="text-purple-400 font-mono">2016 - 2018</p>
+                        <p class="text-gray-300 font-mono mt-2">Interior Design Company - First professional role</p>
+                    </div>
+                </div>
+
+                <!-- Wall Decor International -->
+                <div class="relative pl-8 border-l-2 border-purple-500/30">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                    <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                        <h3 class="text-2xl font-code text-white">Wall Decor International</h3>
+                        <p class="text-purple-400 font-mono">2018 - 2019</p>
+                        <p class="text-gray-300 font-mono mt-2">Two years of experience in interior decoration</p>
+                    </div>
+                </div>
+
+                <!-- Peace Energy -->
+                <div class="relative pl-8 border-l-2 border-purple-500/30">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                    <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                        <h3 class="text-2xl font-code text-white">Peace Energy</h3>
+                        <p class="text-purple-400 font-mono">2019 - 2020</p>
+                        <p class="text-gray-300 font-mono mt-2">Solar Pump Projects - Last role in traditional industry
+                        </p>
+                    </div>
+                </div>
+
+                <!-- The Pivot -->
+                <div class="relative pl-8 border-l-2 border-purple-500/30">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                    <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                        <h3 class="text-2xl font-code text-white">The Big Decision</h3>
+                        <p class="text-purple-400 font-mono">Early 2020</p>
+                        <p class="text-gray-300 font-mono mt-2">Resigned from traditional career to pursue coding, moved
+                            to Dhaka with brother's support</p>
+                    </div>
+                </div>
+
+                <!-- COVID Era -->
+                <div class="relative pl-8 border-l-2 border-purple-500/30">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                    <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                        <h3 class="text-2xl font-code text-white">COVID-19 Lockdown</h3>
+                        <p class="text-purple-400 font-mono">2020</p>
+                        <p class="text-gray-300 font-mono mt-2">Intensive learning period in Mirpur, building projects
+                            and gaining experience</p>
+                    </div>
+                </div>
+
+                <!-- CONNEKT STUDIO -->
+                <div class="relative pl-8 border-l-2 border-purple-500/30">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                    <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                        <h3 class="text-2xl font-code text-white">CONNEKT STUDIO</h3>
+                        <p class="text-purple-400 font-mono">August 2021 - Present</p>
+                        <p class="text-gray-300 font-mono mt-2">Co-founded with Md Nasim Uddin and Raihan Ahmad, pivoted
+                            to AI-powered solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-code text-white mb-4">Testimonials</h2>
+                <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">What clients say</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                    <p class="text-gray-300 font-mono mb-4">"Nasher is an exceptional developer who consistently
+                        delivers high-quality solutions."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://api.dicebear.com/9.x/initials/svg?seed=John" alt="Client"
+                            class="w-12 h-12 rounded-none">
+                        <div>
+                            <h4 class="text-white font-code">John Doe</h4>
+                            <p class="text-purple-400 font-mono">CEO, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-code text-white mb-4">Latest Articles</h2>
+                <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">Thoughts on AI & Development</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10">
+                    <span class="text-purple-400 font-mono">AI Development</span>
+                    <h3 class="text-2xl font-code text-white mt-2">The Future of AI in Web Development</h3>
+                    <p class="text-gray-300 font-mono mt-2">Exploring how AI is transforming the way we build web
+                        applications...</p>
+                    <a href="#" class="inline-block mt-4 text-purple-400 font-mono hover:text-purple-300">Read More
+                        →</a>
+                </div>
+                <!-- Add more articles -->
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-code text-white mb-4">Get in Touch</h2>
+                <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">Let's work together</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Name"
+                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email"
+                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500">
+                    </div>
+                    <div>
+                        <textarea placeholder="Message" rows="4"
+                            class="w-full p-4 rounded-none bg-white/5 backdrop-blur-md border border-white/10 text-white font-mono focus:border-purple-500"></textarea>
+                    </div>
+                    <button
+                        class="w-full p-4 rounded-none bg-purple-500 text-white font-code hover:bg-purple-600 transition-colors">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 </template>
 
