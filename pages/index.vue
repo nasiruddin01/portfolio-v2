@@ -601,7 +601,7 @@ onMounted(() => {
     if (currentIndex < fullText.length) {
       displayText.value += fullText[currentIndex];
       currentIndex++;
-      setTimeout(typeText, 100);
+      setTimeout(typeText, 30);
     } else {
       isTypingComplete.value = true;
       typeTitle();
@@ -612,7 +612,7 @@ onMounted(() => {
     if (titleIndex < fullTitle.length) {
       displayTitle.value += fullTitle[titleIndex];
       titleIndex++;
-      setTimeout(typeTitle, 100);
+      setTimeout(typeTitle, 30);
     } else {
       isTitleComplete.value = true;
       typeLink();
@@ -623,7 +623,7 @@ onMounted(() => {
     if (linkIndex < fullLink.length) {
       displayLink.value += fullLink[linkIndex];
       linkIndex++;
-      setTimeout(typeLink, 100);
+      setTimeout(typeLink, 30);
     } else {
       isLinkComplete.value = true;
       typeDescription();
