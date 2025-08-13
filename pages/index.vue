@@ -208,7 +208,7 @@
       </div>
     </div>
 
-    <div class="container mx-auto px-4 py-16">
+    <div class="max-w-[768px] mx-auto px-4 py-16">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold font-code text-white mb-4">My Journey</h2>
         <p class="text-xl text-gray-300 font-mono max-w-2xl mx-auto">
@@ -226,15 +226,66 @@
           <div
             class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
           >
-            <h3 class="text-2xl font-code text-white">Static Fit</h3>
-            <p class="text-purple-400 font-mono">2016 - 2018</p>
+            <h3 class="text-2xl font-code text-white">CONNEKT STUDIO</h3>
+            <p class="text-purple-400 font-mono">August 2021 - Present</p>
             <p class="text-gray-300 font-mono mt-2">
-              Interior Design Company - First professional role
+              Co-founded with Md Nasim Uddin and Raihan Ahmad, pivoted to
+              AI-powered solutions
             </p>
           </div>
         </div>
 
         <!-- Wall Decor International -->
+        <div class="relative pl-8 border-l-2 border-purple-500/30">
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"
+          ></div>
+          <div
+            class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
+          >
+            <h3 class="text-2xl font-code text-white">COVID-19 Lockdown</h3>
+            <p class="text-purple-400 font-mono">2020</p>
+            <p class="text-gray-300 font-mono mt-2">
+              Intensive learning period in Mirpur, building projects and gaining
+              experience
+            </p>
+          </div>
+        </div>
+
+        <!-- Peace Energy -->
+        <div class="relative pl-8 border-l-2 border-purple-500/30">
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"
+          ></div>
+          <div
+            class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
+          >
+            <h3 class="text-2xl font-code text-white">The Big Decision</h3>
+            <p class="text-purple-400 font-mono">Early 2020</p>
+            <p class="text-gray-300 font-mono mt-2">
+              Resigned from traditional career to pursue coding, moved to Dhaka
+              with brother's support
+            </p>
+          </div>
+        </div>
+
+        <!-- The Pivot -->
+        <div class="relative pl-8 border-l-2 border-purple-500/30">
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"
+          ></div>
+          <div
+            class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
+          >
+            <h3 class="text-2xl font-code text-white">Peace Energy</h3>
+            <p class="text-purple-400 font-mono">2019 - 2020</p>
+            <p class="text-gray-300 font-mono mt-2">
+              Solar Pump Projects - Last role in traditional industry
+            </p>
+          </div>
+        </div>
+
+        <!-- COVID Era -->
         <div class="relative pl-8 border-l-2 border-purple-500/30">
           <div
             class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"
@@ -252,56 +303,6 @@
           </div>
         </div>
 
-        <!-- Peace Energy -->
-        <div class="relative pl-8 border-l-2 border-purple-500/30">
-          <div
-            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"
-          ></div>
-          <div
-            class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
-          >
-            <h3 class="text-2xl font-code text-white">Peace Energy</h3>
-            <p class="text-purple-400 font-mono">2019 - 2020</p>
-            <p class="text-gray-300 font-mono mt-2">
-              Solar Pump Projects - Last role in traditional industry
-            </p>
-          </div>
-        </div>
-
-        <!-- The Pivot -->
-        <div class="relative pl-8 border-l-2 border-purple-500/30">
-          <div
-            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"
-          ></div>
-          <div
-            class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
-          >
-            <h3 class="text-2xl font-code text-white">The Big Decision</h3>
-            <p class="text-purple-400 font-mono">Early 2020</p>
-            <p class="text-gray-300 font-mono mt-2">
-              Resigned from traditional career to pursue coding, moved to Dhaka
-              with brother's support
-            </p>
-          </div>
-        </div>
-
-        <!-- COVID Era -->
-        <div class="relative pl-8 border-l-2 border-purple-500/30">
-          <div
-            class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"
-          ></div>
-          <div
-            class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
-          >
-            <h3 class="text-2xl font-code text-white">COVID-19 Lockdown</h3>
-            <p class="text-purple-400 font-mono">2020</p>
-            <p class="text-gray-300 font-mono mt-2">
-              Intensive learning period in Mirpur, building projects and gaining
-              experience
-            </p>
-          </div>
-        </div>
-
         <!-- CONNEKT STUDIO -->
         <div class="relative pl-8 border-l-2 border-purple-500/30">
           <div
@@ -310,18 +311,17 @@
           <div
             class="p-6 rounded-none bg-white/5 backdrop-blur-md border border-white/10"
           >
-            <h3 class="text-2xl font-code text-white">CONNEKT STUDIO</h3>
-            <p class="text-purple-400 font-mono">August 2021 - Present</p>
+            <h3 class="text-2xl font-code text-white">Static Fit</h3>
+            <p class="text-purple-400 font-mono">2016 - 2018</p>
             <p class="text-gray-300 font-mono mt-2">
-              Co-founded with Md Nasim Uddin and Raihan Ahmad, pivoted to
-              AI-powered solutions
+              Interior Design Company - First professional role
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container mx-auto px-4 py-16">
+    <!-- <div class="container mx-auto px-4 py-16">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold font-code text-white mb-4">
           Testimonials
@@ -350,9 +350,8 @@
             </div>
           </div>
         </div>
-        <!-- Add more testimonials -->
       </div>
-    </div>
+    </div> -->
 
     <div class="container mx-auto px-4 py-16">
       <div class="text-center mb-12">
