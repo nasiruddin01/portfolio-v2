@@ -457,7 +457,7 @@
         <!-- Copyright Text -->
         <div class="text-center mt-8">
           <p class="text-gray-400 font-mono text-sm">
-            © 2025 Nasher Uddin. All rights reserved.
+            © {{ new Date().getFullYear() }} Nasher Uddin. All rights reserved.
           </p>
         </div>
       </div>
