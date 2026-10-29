@@ -59,8 +59,8 @@
           </p>
         </div>
     </div>
-    <div class="w-full overflow-hidden flex justify-center pointer-events-none z-20">
-      <Equalizer />
+    <div class="w-full overflow-hidden pointer-events-none">
+      <NeuralNodes />
     </div>
 
     <!-- Achievements -->
