@@ -40,19 +40,19 @@
           </p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">5+</div>
             <div class="text-[#1A4435] font-mono">Years Active</div>
           </div>
-          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">10+</div>
             <div class="text-[#1A4435] font-mono">AI Products Shipped</div>
           </div>
-          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">100k+</div>
             <div class="text-[#1A4435] font-mono">Worldwide Users</div>
           </div>
-          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">10+</div>
             <div class="text-[#1A4435] font-mono">AI Engineers</div>
           </div>
@@ -80,27 +80,27 @@
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <h3 class="text-xl font-code text-[#D4F53C] mb-3">AI Agents</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Multi-step reasoning, self-correction, persistent memory. I've shipped agents that run autonomously across real business workflows.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <h3 class="text-xl font-code text-[#D4F53C] mb-3">Voice AI</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">LLM-native voice on real telephony. Sub-2s latency. I built Vocalo.ai from scratch — I know this space from the inside.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <h3 class="text-xl font-code text-[#D4F53C] mb-3">RAG &amp; Chatbots</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Retrieval systems that actually retrieve the right thing. I've built and maintained these across multiple live products.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <h3 class="text-xl font-code text-[#D4F53C] mb-3">Generative AI</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Image, audio, video generation pipelines. I've shipped creative AI products to tens of thousands of users.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <h3 class="text-xl font-code text-[#D4F53C] mb-3">Multi-Agent Systems</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Orchestrated agent networks where planning, execution, and feedback work together. I architect these end to end.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <h3 class="text-xl font-code text-[#D4F53C] mb-3">Operations &amp; Delivery</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Not just building — running. I manage teams, set delivery standards, and stay in the room until the thing actually works.</p>
           </div>
@@ -118,32 +118,32 @@
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">01</div>
             <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Prove it on yourself first</h3>
             <p class="text-[#1A4435] font-mono text-sm leading-relaxed">If we haven't run it on our own products, we don't sell it.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">02</div>
             <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Ship, then improve</h3>
             <p class="text-[#1A4435] font-mono text-sm leading-relaxed">Real usage teaches more in a week than six months of planning ever could.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">03</div>
             <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Say what you actually think</h3>
             <p class="text-[#1A4435] font-mono text-sm leading-relaxed">Honest feedback early costs less than polite silence later.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">04</div>
             <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Curiosity over credentials</h3>
             <p class="text-[#1A4435] font-mono text-sm leading-relaxed">The best work comes from wanting to understand, not just wanting to qualify.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">05</div>
             <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Consistency is the skill</h3>
             <p class="text-[#1A4435] font-mono text-sm leading-relaxed">Showing up when it's slow matters more than performing when conditions are good.</p>
           </div>
-          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]">
             <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">06</div>
             <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Context changes everything</h3>
             <p class="text-[#1A4435] font-mono text-sm leading-relaxed">The right solution depends on the actual problem — there are no universal answers.</p>
@@ -178,7 +178,7 @@
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <div class="text-5xl mb-5">✈️</div>
             <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Travel</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
@@ -190,7 +190,7 @@
               like themselves. Those are usually where the real character is.
             </p>
           </div>
-          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <div class="text-5xl mb-5">🏛️</div>
             <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Ancient History</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
@@ -203,7 +203,7 @@
               Central Asia, the ancient world — that's further down the list but it's there.
             </p>
           </div>
-          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <div class="text-5xl mb-5">⛰️</div>
             <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Hills &amp; Mountains</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
@@ -216,7 +216,7 @@
               of landscape but the same pull.
             </p>
           </div>
-          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435]">
             <div class="text-5xl mb-5">🌊</div>
             <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Seas &amp; Rivers</h3>
             <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
@@ -245,7 +245,7 @@
           <div
             v-for="project in projects"
             :key="project.name"
-            class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1"
+            class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 shadow-[0_1px_8px_rgba(13,43,34,0.1)]"
           >
             <div class="mb-4">
               <img
@@ -336,7 +336,7 @@
             </div>
             <button
               type="submit"
-              class="w-full p-4 rounded-none bg-[#D4F53C] border border-[#D4F53C] text-[#0D2B22] font-code hover:bg-[#c9eb30] transition-all duration-300 text-xl shadow-sm hover:shadow-md font-bold"
+              class="w-full p-4 rounded-none bg-[#D4F53C] border border-[#D4F53C] text-[#0D2B22] font-code hover:bg-[#c9eb30] text-xl shadow-sm hover:shadow-md font-bold"
               @click="trackEvent('cta_click', { cta_label: 'Send Message' })"
             >
               Send Message
@@ -353,7 +353,7 @@
           <a
             href="https://github.com/nasiruddin01"
             target="_blank"
-            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C]"
             @click="trackEvent('social_click', { platform: 'github' })"
           >
             <i class="fab fa-github text-2xl"></i>
@@ -361,7 +361,7 @@
           <a
             href="https://linkedin.com/in/nasir01/"
             target="_blank"
-            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C]"
             @click="trackEvent('social_click', { platform: 'linkedin' })"
           >
             <i class="fab fa-linkedin text-2xl"></i>
@@ -369,7 +369,7 @@
           <a
             href="https://twitter.com/nasir_uddin01"
             target="_blank"
-            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C]"
             @click="trackEvent('social_click', { platform: 'twitter' })"
           >
             <i class="fab fa-twitter text-2xl"></i>
@@ -377,7 +377,7 @@
           <a
             href="https://instagram.com/md.nasir.uddin1995/"
             target="_blank"
-            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C]"
             @click="trackEvent('social_click', { platform: 'facebook' })"
           >
             <i class="fab fa-facebook text-2xl"></i>
@@ -385,7 +385,7 @@
           <a
             href="https://instagram.com/nasiruddin.md"
             target="_blank"
-            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C]"
             @click="trackEvent('social_click', { platform: 'instagram' })"
           >
             <i class="fab fa-instagram text-2xl"></i>
@@ -394,14 +394,14 @@
             href="https://www.youtube.com/@nasheruddinofficial"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C]"
             @click="trackEvent('social_click', { platform: 'youtube' })"
           >
             <i class="fab fa-youtube text-2xl"></i>
           </a>
         </div>
         <div class="text-center mt-6">
-          <p class="text-[#9FCEBE]/60 font-mono text-sm">
+          <p class="text-[#9FCEBE] font-mono text-sm">
             © {{ new Date().getFullYear() }} Nasher Uddin. All rights reserved.
           </p>
         </div>
@@ -437,7 +437,7 @@ const projects = [
     description:
       "Experience natural conversations with an expressive 3D AI assistant that sees, hears, and understands.",
     tags: ["LLM", "RAG", "Vector DB", "Chatbot"],
-    link: "https://heyluna.ai",
+    link: "https://heyluna.riverborn.com/",
   },
   {
     name: "PhotoFoxAI",
