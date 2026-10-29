@@ -30,8 +30,8 @@
       </div>
     </div>
 
-    <!-- By the Numbers — Lime -->
-    <div class="bg-[#D4F53C]">
+    <!-- By the Numbers — Frost -->
+    <div class="bg-[#F2FFEE]">
       <div class="container mx-auto px-4 py-20">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-display text-[#0D2B22] mb-4">By the numbers</h2>
@@ -108,8 +108,8 @@
       </div>
     </div>
 
-    <!-- How I Think — Lime -->
-    <div id="thinking" class="bg-[#D4F53C]">
+    <!-- How I Think — Frost -->
+    <div id="thinking" class="bg-[#F2FFEE]">
       <div class="container mx-auto px-4 py-20">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-display text-[#0D2B22] mb-4">How I think</h2>
@@ -232,8 +232,8 @@
       </div>
     </div>
 
-    <!-- Things I've Built — Lime -->
-    <div id="projects" class="bg-[#D4F53C]">
+    <!-- Things I've Built — Frost -->
+    <div id="projects" class="bg-[#F2FFEE]">
       <div class="container mx-auto px-4 py-20">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-display text-[#0D2B22] mb-4">Things I've built</h2>
