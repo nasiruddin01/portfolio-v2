@@ -20,49 +20,20 @@
 
         <!-- Text content -->
         <div class="w-1/2 text-center md:text-left">
-          <h1 class="text-5xl md:text-6xl font-bold text-[#0D2B22] font-code">
-            <span v-if="!isTypingComplete"
-              >{{ displayText }}<span class="animate-blink">|</span></span
-            >
-            <span v-else>Hi, I'm Nasher Uddin</span>
+          <h1 class="text-5xl md:text-6xl font-display text-[#0D2B22] leading-tight">
+            Nasher Uddin
           </h1>
-          <h2 class="text-4xl font-bold font-code text-[#0D2B22] mt-2 !font-code">
-            <span v-if="!isTitleComplete"
-              >{{ displayTitle }}<span class="animate-blink">|</span></span
-            >
-            <span v-else>Co-Founder & COO</span>
-          </h2>
-
-          <a
-            href="https://www.riverborn.com"
-            target="_blank"
-            class="text-2xl font-bold font-code text-[#0D2B22] mt-2 !font-['VT323'] hover:text-[#1A4435]"
-          >
-            <span v-if="!isLinkComplete"
-              >{{ displayLink }}<span class="animate-blink">|</span></span
-            >
-            <span v-else>Riverborn</span>
-          </a>
-
-          <p class="text-[#1A4435] text-sm font-mono mt-2">
-            <span v-if="!isDescriptionComplete"
-              >{{ displayDescription
-              }}<span class="animate-blink">|</span></span
-            >
-            <span v-else
-              >Co-Founder & COO at
-              <a
-                href="https://www.riverborn.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Riverborn</a
-              >, an AI system development company building production-grade AI
-              agents, voice systems, and creative AI infrastructure for startups
-              and enterprises globally. We've shipped 10+ live AI products with
-              100K+ users — and every system we deliver to clients is proven on
-              our own products first.</span
-            >
+          <p class="text-lg font-mono text-[#1A4435] mt-4 mb-6 leading-relaxed max-w-lg">
+            I've spent 5 years figuring out how to make AI work in the real world — not demos, not prototypes, but live systems that handle real users every day.
           </p>
+          <p class="text-base font-mono text-[#1A4435] leading-relaxed max-w-lg">
+            I think in systems. I move fast. I care about what actually ships, not what sounds good in a pitch deck.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-[#0D2B22] text-[#D4F53C] font-mono text-sm">5 years building</span>
+            <span class="px-4 py-2 bg-[#0D2B22] text-[#D4F53C] font-mono text-sm">10+ products live</span>
+            <span class="px-4 py-2 bg-[#0D2B22] text-[#D4F53C] font-mono text-sm">100K+ users</span>
+          </div>
         </div>
       </div>
     </div>
@@ -70,11 +41,11 @@
     <!-- Achievements -->
     <div class="container mx-auto px-4 mt-24">
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-display font-bold text-[#0D2B22] mb-4">
-          Achievements
+        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
+          By the numbers
         </h2>
-        <p class="text-xl text-[#1A4435] font-mono max-w-2xl mx-auto">
-          A collection of my achievements and accomplishments
+        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+          Not milestones I planned — things that happened because I kept showing up.
         </p>
       </div>
 
@@ -109,118 +80,63 @@
       </div>
     </div>
 
-    <!-- Riverborn Section -->
-    <div id="riverborn" class="container mx-auto px-4 py-16">
+    <!-- What I Do Section -->
+    <div id="work" class="container mx-auto px-4 py-16">
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-display font-bold text-[#0D2B22] mb-4">
-          Riverborn
+        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
+          What I do
         </h2>
-        <p class="text-xl text-[#1A4435] font-mono max-w-2xl mx-auto">
-          AI System Development for the Real World
+        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+          I build AI systems — and I've been doing it long enough to know what actually works and what doesn't.
         </p>
       </div>
 
-      <!-- About Riverborn -->
       <div class="max-w-3xl mx-auto mb-12">
-        <div
-          class="p-8 rounded-2xl bg-white border border-[#E8EDE6] shadow-[0_1px_8px_rgba(13,43,34,0.07)]"
-        >
+        <div class="p-8 rounded-2xl bg-white border border-[#E8EDE6] shadow-[0_1px_8px_rgba(13,43,34,0.07)]">
           <p class="text-[#1A4435] font-mono text-base leading-relaxed">
-            Riverborn builds production-grade AI agents, voice systems, and
-            creative AI infrastructure for startups and enterprises globally.
-            Based in Bangladesh with global delivery, we work with CTOs, VPs of
-            Engineering, and Heads of AI at Series A–C companies through to
-            enterprise teams — at 40–60% less than US/EU agencies.
+            I co-founded <a href="https://www.riverborn.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#0D2B22] border-b border-[#0D2B22]/30 hover:border-[#0D2B22] transition-all">Riverborn</a> because I wanted to build AI that earns its keep — systems that run in production, handle real load, and actually solve the problem they were built for.
           </p>
           <p class="text-[#1A4435] font-mono text-base leading-relaxed mt-4">
-            As Co-Founder & COO, I lead operations, client delivery, and product
-            development. I personally make sure every client inquiry gets a real
-            answer, and every system we ship is one we've already proven on our
-            own products.
+            I run operations, drive product decisions, stay close to clients, and personally make sure nothing ships unless it's ready. The rule I hold myself to: if I haven't run it on something we own first, it doesn't go to a client.
           </p>
-          <a
-            href="https://www.riverborn.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block mt-6 px-6 py-3 bg-[#0D2B22] text-[#D4F53C] font-code text-xl hover:bg-[#1A4435] transition-all duration-300"
-            @click="trackEvent('cta_click', { cta_label: 'Visit Riverborn', destination: 'https://www.riverborn.com' })"
-          >
-            Visit Riverborn →
-          </a>
         </div>
       </div>
 
-      <!-- What We Build -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <h3 class="text-xl font-bold font-code text-[#0D2B22] mb-3">
-            Autonomous AI Agents
-          </h3>
-          <p class="text-[#1A4435] font-mono text-sm">
-            Multi-step planning, self-correcting pipelines, and persistent
-            memory for complex business workflows.
+        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
+          <h3 class="text-xl font-code text-[#0D2B22] mb-3">AI Agents</h3>
+          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
+            Multi-step reasoning, self-correction, persistent memory. I've shipped agents that run autonomously across real business workflows.
           </p>
         </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <h3 class="text-xl font-bold font-code text-[#0D2B22] mb-3">
-            Voice AI Systems
-          </h3>
-          <p class="text-[#1A4435] font-mono text-sm">
-            Real telephony infrastructure with sub-2000ms latency. LLM-native
-            voice for live call centers and agent assist.
+        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
+          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Voice AI</h3>
+          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
+            LLM-native voice on real telephony. Sub-2s latency. I built Vocalo.ai from scratch — I know this space from the inside.
           </p>
         </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <h3 class="text-xl font-bold font-code text-[#0D2B22] mb-3">
-            LLM Chatbots & RAG
-          </h3>
-          <p class="text-[#1A4435] font-mono text-sm">
-            Retrieval-augmented chatbots across voice and text, trained on your
-            data and integrated into your stack.
+        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
+          <h3 class="text-xl font-code text-[#0D2B22] mb-3">RAG & Chatbots</h3>
+          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
+            Retrieval systems that actually retrieve the right thing. I've built and maintained these across multiple live products.
           </p>
         </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <h3 class="text-xl font-bold font-code text-[#0D2B22] mb-3">
-            Generative AI
-          </h3>
-          <p class="text-[#1A4435] font-mono text-sm">
-            Text, image, audio, and video generation pipelines — from creative
-            tooling to enterprise content automation.
+        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
+          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Generative AI</h3>
+          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
+            Image, audio, video generation pipelines. I've shipped creative AI products to tens of thousands of users.
           </p>
         </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <h3 class="text-xl font-bold font-code text-[#0D2B22] mb-3">
-            Multi-Agent Systems
-          </h3>
-          <p class="text-[#1A4435] font-mono text-sm">
-            Orchestrated agent networks for complex workflows — planning,
-            execution, and feedback loops working in concert.
+        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
+          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Multi-Agent Systems</h3>
+          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
+            Orchestrated agent networks where planning, execution, and feedback work together. I architect these end to end.
           </p>
         </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <h3 class="text-xl font-bold font-code text-[#0D2B22] mb-3">
-            Enterprise Integration
-          </h3>
-          <p class="text-[#1A4435] font-mono text-sm">
-            AI connected into CRM, ERP, and HRIS via standard APIs. On-premise
-            and private cloud deployments for regulated industries.
+        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
+          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Operations & Delivery</h3>
+          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
+            Not just building — running. I manage teams, set delivery standards, and stay in the room until the thing actually works.
           </p>
         </div>
       </div>
@@ -229,11 +145,11 @@
     <!-- Values & Philosophy Section -->
     <div id="thinking" class="container mx-auto px-4 py-16">
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-display font-bold text-[#0D2B22] mb-4">
-          How I Think
+        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
+          How I think
         </h2>
-        <p class="text-xl text-[#1A4435] font-mono max-w-2xl mx-auto">
-          The principles I keep coming back to
+        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+          These aren't frameworks I read somewhere. They're what I've learned from actually building things.
         </p>
       </div>
 
@@ -306,8 +222,8 @@
         <h2 class="text-4xl font-display font-bold text-[#0D2B22] mb-4">
           Beyond the Screen
         </h2>
-        <p class="text-xl text-[#1A4435] font-mono max-w-2xl mx-auto">
-          What drives me when I step away from the keyboard
+        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+          What I actually think about when I'm not building things
         </p>
       </div>
 
@@ -400,11 +316,11 @@
     <!-- Projects Section -->
     <div id="projects" class="container mx-auto px-4 py-16">
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-display font-bold text-[#0D2B22] mb-4">
-          Projects
+        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
+          Things I've built
         </h2>
-        <p class="text-xl text-[#1A4435] font-mono max-w-2xl mx-auto">
-          A collection of my work, showcasing my skills and expertise
+        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+          Every one of these is live, used by real people, and something I personally had a hand in shipping.
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -472,11 +388,11 @@
     <!-- Contact -->
     <div id="contact" class="container mx-auto px-4 py-16">
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold font-code text-[#0D2B22] mb-4">
-          Get in Touch
+        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
+          Say hello
         </h2>
-        <p class="text-xl text-[#1A4435] font-mono max-w-2xl mx-auto">
-          Let's work together
+        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+          I read every message. If something I've built or written resonates with you — I'd genuinely like to hear it.
         </p>
       </div>
       <div class="max-w-2xl mx-auto">
@@ -595,6 +511,8 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 const projects = [
   {
     name: "Vocalo.ai",
@@ -662,74 +580,6 @@ const projects = [
   },
 ];
 
-const displayText = ref("");
-const displayDescription = ref("");
-const displayTitle = ref("");
-const displayLink = ref("");
-
-const isTypingComplete = ref(false);
-const isDescriptionComplete = ref(false);
-const isTitleComplete = ref(false);
-const isLinkComplete = ref(false);
-
-const fullText = "Hi, I'm Nasher Uddin";
-const fullDescription =
-  "Co-Founder & COO at Riverborn, an AI system development company building production-grade AI agents, voice systems, and creative AI infrastructure for startups and enterprises globally. We've shipped 10+ live AI products with 100K+ users — and every system we deliver to clients is proven on our own products first.";
-
-const fullTitle = "Co-Founder & COO";
-const fullLink = "Riverborn";
-
-let currentIndex = 0;
-let descriptionIndex = 0;
-let titleIndex = 0;
-let linkIndex = 0;
-
-onMounted(() => {
-  const typeText = () => {
-    if (currentIndex < fullText.length) {
-      displayText.value += fullText[currentIndex];
-      currentIndex++;
-      setTimeout(typeText, 30);
-    } else {
-      isTypingComplete.value = true;
-      typeTitle();
-    }
-  };
-
-  const typeTitle = () => {
-    if (titleIndex < fullTitle.length) {
-      displayTitle.value += fullTitle[titleIndex];
-      titleIndex++;
-      setTimeout(typeTitle, 30);
-    } else {
-      isTitleComplete.value = true;
-      typeLink();
-    }
-  };
-
-  const typeLink = () => {
-    if (linkIndex < fullLink.length) {
-      displayLink.value += fullLink[linkIndex];
-      linkIndex++;
-      setTimeout(typeLink, 30);
-    } else {
-      isLinkComplete.value = true;
-      typeDescription();
-    }
-  };
-
-  const typeDescription = () => {
-    if (descriptionIndex < fullDescription.length) {
-      displayDescription.value += fullDescription[descriptionIndex];
-      descriptionIndex++;
-      setTimeout(typeDescription, 30);
-    } else {
-      isDescriptionComplete.value = true;
-    }
-  };
-
-  typeText();
-});
 
 const trackEvent = (eventName, params = {}) => {
   if (typeof window !== 'undefined' && window.gtag) {
@@ -886,32 +736,19 @@ useHead({
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap");
-
-.font-code {
-  font-family: "VT323", monospace;
-}
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap");
 
 .font-display {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Besley", serif;
+  font-weight: 700;
+}
+
+.font-code {
+  font-family: "Besley", serif;
+  font-weight: 600;
 }
 
 .font-mono {
-  font-family: "Space Mono", monospace;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-.animate-blink {
-  animation: blink 1s infinite;
+  font-family: "Geist", sans-serif;
 }
 </style>
