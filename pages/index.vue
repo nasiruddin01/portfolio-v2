@@ -1,14 +1,20 @@
 <template>
   <div class="min-h-screen overflow-x-hidden" style="background-color: #F2FFEE">
     <!-- Hero Section -->
-    <div
-      class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-between gap-12"
-    >
+    <div class="relative overflow-hidden">
+      <!-- Neural Nodes background -->
+      <div class="absolute inset-0 pointer-events-none">
+        <NeuralNodes />
+      </div>
+
+      <div
+        class="relative z-10 container mx-auto px-4 py-20 flex flex-col md:flex-row items-center justify-between gap-12"
+      >
         <div class="w-1/2 flex items-center justify-center">
           <img
             src="/nasher-illustrated.webp"
             alt="Nasher Uddin"
-            class="w-full max-w-sm object-contain"
+            class="w-full max-w-sm object-contain rounded-2xl"
           />
         </div>
 
@@ -58,9 +64,7 @@
             >
           </p>
         </div>
-    </div>
-    <div class="w-full overflow-hidden pointer-events-none">
-      <NeuralNodes />
+      </div>
     </div>
 
     <!-- Achievements -->
@@ -708,68 +712,124 @@ const handleSubmit = async (e) => {
   }
 };
 
+const description = "Co-Founder & COO at Riverborn — an AI system development company building production-grade AI agents, voice systems, and creative AI infrastructure for startups and enterprises globally. 10+ live AI products, 100K+ users."
+
 useHead({
+  htmlAttrs: { lang: "en" },
   title: "Nasher Uddin | Co-Founder & COO at Riverborn",
   meta: [
-    {
-      name: "title",
-      content: "Nasher Uddin | Co-Founder & COO at Riverborn",
-    },
-    {
-      name: "description",
-      content:
-        "Co-Founder & COO at Riverborn — an AI system development company building production-grade AI agents, voice systems, and creative AI infrastructure for startups and enterprises globally. 10+ live AI products, 100K+ users.",
-    },
-
-    { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://nasheruddin.com/" },
-    {
-      property: "og:title",
-      content: "Nasher Uddin | Co-Founder & COO at Riverborn",
-    },
-    {
-      property: "og:description",
-      content:
-        "Co-Founder & COO at Riverborn — an AI system development company building production-grade AI agents, voice systems, and creative AI infrastructure for startups and enterprises globally. 10+ live AI products, 100K+ users.",
-    },
-    {
-      property: "og:image",
-      content: "https://nasheruddin.com/nasir-dotted.png",
-    },
-
-    { property: "twitter:card", content: "summary_large_image" },
-    { property: "twitter:url", content: "https://nasheruddin.com/" },
-    {
-      property: "twitter:title",
-      content: "Nasher Uddin | Co-Founder & COO at Riverborn",
-    },
-    {
-      property: "twitter:description",
-      content:
-        "Co-Founder & COO at Riverborn — an AI system development company building production-grade AI agents, voice systems, and creative AI infrastructure for startups and enterprises globally. 10+ live AI products, 100K+ users.",
-    },
-    {
-      property: "twitter:image",
-      content: "https://nasheruddin.com/nasir-dotted.png",
-    },
-
-    {
-      name: "keywords",
-      content:
-        "Nasher Uddin, Riverborn, AI Agents, Voice AI, LLM, RAG, Generative AI, Multi-Agent Systems, AI Development, Co-Founder, COO, Full Stack Developer, AI Solutions, Enterprise AI, Bangladesh",
-    },
+    { name: "title", content: "Nasher Uddin | Co-Founder & COO at Riverborn" },
+    { name: "description", content: description },
+    { name: "keywords", content: "Nasher Uddin, Riverborn, AI Agents, Voice AI, LLM, RAG, Generative AI, Multi-Agent Systems, AI Development, Co-Founder, COO, AI Solutions, Enterprise AI, Bangladesh, AI Infrastructure" },
     { name: "author", content: "Nasher Uddin" },
-    { name: "robots", content: "index, follow" },
+    { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
     { name: "language", content: "English" },
     { name: "viewport", content: "width=device-width, initial-scale=1.0" },
 
-    { rel: "canonical", href: "https://nasheruddin.com/" },
+    // Open Graph
+    { property: "og:type", content: "profile" },
+    { property: "og:url", content: "https://nasheruddin.com/" },
+    { property: "og:site_name", content: "Nasher Uddin" },
+    { property: "og:locale", content: "en_US" },
+    { property: "og:title", content: "Nasher Uddin | Co-Founder & COO at Riverborn" },
+    { property: "og:description", content: description },
+    { property: "og:image", content: "https://nasheruddin.com/nasher-illustrated.webp" },
+    { property: "og:image:alt", content: "Nasher Uddin — Co-Founder & COO at Riverborn" },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+    { property: "profile:first_name", content: "Nasher" },
+    { property: "profile:last_name", content: "Uddin" },
+    { property: "profile:username", content: "nasir01" },
+
+    // Twitter / X
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:site", content: "@nasir_uddin01" },
+    { name: "twitter:creator", content: "@nasir_uddin01" },
+    { name: "twitter:title", content: "Nasher Uddin | Co-Founder & COO at Riverborn" },
+    { name: "twitter:description", content: description },
+    { name: "twitter:image", content: "https://nasheruddin.com/nasher-illustrated.webp" },
+    { name: "twitter:image:alt", content: "Nasher Uddin — Co-Founder & COO at Riverborn" },
   ],
   link: [
+    { rel: "canonical", href: "https://nasheruddin.com/" },
     { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
     {
       rel: "stylesheet",
       href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css",
+    },
+  ],
+  script: [
+    // JSON-LD: Person — primary entity (most important for AEO)
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://nasheruddin.com/#person",
+        name: "Nasher Uddin",
+        alternateName: "Md. Nasher Uddin",
+        url: "https://nasheruddin.com",
+        image: {
+          "@type": "ImageObject",
+          url: "https://nasheruddin.com/nasher-illustrated.webp",
+          width: 800,
+          height: 800,
+        },
+        jobTitle: "Co-Founder & COO",
+        worksFor: {
+          "@type": "Organization",
+          "@id": "https://www.riverborn.com/#organization",
+          name: "Riverborn",
+          url: "https://www.riverborn.com",
+        },
+        description: description,
+        knowsAbout: [
+          "AI Systems",
+          "Voice AI",
+          "Large Language Models",
+          "Retrieval-Augmented Generation",
+          "Generative AI",
+          "Multi-Agent Systems",
+          "AI Infrastructure",
+          "Product Strategy",
+          "Startup Operations",
+          "AI Product Development",
+        ],
+        sameAs: [
+          "https://linkedin.com/in/nasir01/",
+          "https://github.com/nasiruddin01",
+          "https://twitter.com/nasir_uddin01",
+          "https://instagram.com/nasiruddin.md",
+          "https://www.riverborn.com",
+        ],
+      }),
+    },
+    // JSON-LD: Organization
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.riverborn.com/#organization",
+        name: "Riverborn",
+        url: "https://www.riverborn.com",
+        founder: { "@type": "Person", name: "Nasher Uddin", url: "https://nasheruddin.com" },
+        description: "AI system development company building production-grade AI agents, voice systems, and creative AI infrastructure for startups and enterprises globally.",
+        knowsAbout: ["AI Agents", "Voice AI Systems", "LLM Infrastructure", "Creative AI", "Enterprise AI"],
+      }),
+    },
+    // JSON-LD: WebSite
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://nasheruddin.com/#website",
+        name: "Nasher Uddin",
+        url: "https://nasheruddin.com",
+        description: "Personal portfolio of Nasher Uddin, Co-Founder & COO at Riverborn — AI systems builder.",
+        author: { "@id": "https://nasheruddin.com/#person" },
+      }),
     },
   ],
 });

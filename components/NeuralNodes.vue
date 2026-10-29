@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full overflow-hidden" style="height: 200px;">
+  <div class="w-full h-full">
     <svg ref="svgRef" class="w-full h-full" :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="xMidYMid slice">
       <line
         v-for="(edge, i) in edges"
@@ -25,9 +25,9 @@
 <script setup>
 import { ref, reactive, onMounted, onBeforeUnmount } from 'vue'
 
-const W = 1200
-const H = 200
-const NODE_COUNT = 40
+const W = 1400
+const H = 600
+const NODE_COUNT = 60
 
 const nodes = reactive(
   Array.from({ length: NODE_COUNT }, () => ({
@@ -50,8 +50,8 @@ function computeEdges() {
       const dx = nodes[i].x - nodes[j].x
       const dy = nodes[i].y - nodes[j].y
       const dist = Math.sqrt(dx * dx + dy * dy)
-      if (dist < 140) {
-        result.push([i, j, 1 - dist / 140])
+      if (dist < 180) {
+        result.push([i, j, 1 - dist / 180])
       }
     }
   }
