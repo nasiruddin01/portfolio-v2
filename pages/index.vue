@@ -1,15 +1,9 @@
 <template>
-  <div class="min-h-screen overflow-x-hidden" style="background-color: #F2FFEE">
-    <!-- Hero Section -->
-    <div class="relative overflow-hidden">
-      <!-- Neural Nodes background -->
-      <div class="absolute inset-0 pointer-events-none">
-        <NeuralNodes />
-      </div>
+  <div class="min-h-screen overflow-x-hidden">
 
-      <div
-        class="relative z-10 container mx-auto px-4 py-20 flex flex-col md:flex-row items-center justify-between gap-12"
-      >
+    <!-- Hero Section — Forest Green -->
+    <div class="bg-[#0D2B22]">
+      <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
         <div class="w-1/2 flex items-center justify-center">
           <img
             src="/nasher-illustrated.webp"
@@ -17,442 +11,349 @@
             class="w-full max-w-sm object-contain rounded-2xl"
           />
         </div>
-
-        <!-- Text content -->
         <div class="w-1/2 text-center md:text-left">
-          <h1 class="text-5xl md:text-6xl font-display text-[#0D2B22] leading-tight">
+          <h1 class="text-5xl md:text-6xl font-display text-[#D4F53C] leading-tight">
             Nasher Uddin
           </h1>
-          <p class="text-lg font-mono text-[#1A4435] mt-4 mb-6 leading-relaxed max-w-lg">
+          <p class="text-lg font-mono text-[#9FCEBE] mt-4 mb-6 leading-relaxed max-w-lg">
             I've spent 5 years figuring out how to make AI work in the real world — not demos, not prototypes, but live systems that handle real users every day.
           </p>
-          <p class="text-base font-mono text-[#1A4435] leading-relaxed max-w-lg">
+          <p class="text-base font-mono text-[#9FCEBE] leading-relaxed max-w-lg">
             I think in systems. I move fast. I care about what actually ships, not what sounds good in a pitch deck.
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <span class="px-4 py-2 bg-[#0D2B22] text-[#D4F53C] font-mono text-sm">5 years building</span>
-            <span class="px-4 py-2 bg-[#0D2B22] text-[#D4F53C] font-mono text-sm">10+ products live</span>
-            <span class="px-4 py-2 bg-[#0D2B22] text-[#D4F53C] font-mono text-sm">100K+ users</span>
+            <span class="px-4 py-2 bg-[#D4F53C] text-[#0D2B22] font-mono text-sm font-semibold">5 years building</span>
+            <span class="px-4 py-2 bg-[#D4F53C] text-[#0D2B22] font-mono text-sm font-semibold">10+ products live</span>
+            <span class="px-4 py-2 bg-[#D4F53C] text-[#0D2B22] font-mono text-sm font-semibold">100K+ users</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Achievements -->
-    <div class="container mx-auto px-4 mt-24">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
-          By the numbers
-        </h2>
-        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
-          Not milestones I planned — things that happened because I kept showing up.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div
-          class="group relative p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">5+</div>
-          <div class="text-[#1A4435] font-mono">Years Active</div>
+    <!-- By the Numbers — Lime -->
+    <div class="bg-[#D4F53C]">
+      <div class="container mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-display text-[#0D2B22] mb-4">By the numbers</h2>
+          <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+            Not milestones I planned — things that happened because I kept showing up.
+          </p>
         </div>
-
-        <div
-          class="group relative p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">10+</div>
-          <div class="text-[#1A4435] font-mono">AI Products Shipped</div>
-        </div>
-
-        <div
-          class="group relative p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">100k+</div>
-          <div class="text-[#1A4435] font-mono">Worldwide Users</div>
-        </div>
-
-        <div
-          class="group relative p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">10+</div>
-          <div class="text-[#1A4435] font-mono">AI Engineers</div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">5+</div>
+            <div class="text-[#1A4435] font-mono">Years Active</div>
+          </div>
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">10+</div>
+            <div class="text-[#1A4435] font-mono">AI Products Shipped</div>
+          </div>
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">100k+</div>
+            <div class="text-[#1A4435] font-mono">Worldwide Users</div>
+          </div>
+          <div class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-4xl font-bold font-code text-[#0D2B22] mb-2">10+</div>
+            <div class="text-[#1A4435] font-mono">AI Engineers</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- What I Do Section -->
-    <div id="work" class="container mx-auto px-4 py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
-          What I do
-        </h2>
-        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
-          I build AI systems — and I've been doing it long enough to know what actually works and what doesn't.
-        </p>
-      </div>
-
-      <div class="max-w-3xl mx-auto mb-12">
-        <div class="p-8 rounded-2xl bg-white border border-[#E8EDE6] shadow-[0_1px_8px_rgba(13,43,34,0.07)]">
-          <p class="text-[#1A4435] font-mono text-base leading-relaxed">
-            I co-founded <a href="https://www.riverborn.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#0D2B22] border-b border-[#0D2B22]/30 hover:border-[#0D2B22] transition-all">Riverborn</a> because I wanted to build AI that earns its keep — systems that run in production, handle real load, and actually solve the problem they were built for.
-          </p>
-          <p class="text-[#1A4435] font-mono text-base leading-relaxed mt-4">
-            I run operations, drive product decisions, stay close to clients, and personally make sure nothing ships unless it's ready. The rule I hold myself to: if I haven't run it on something we own first, it doesn't go to a client.
+    <!-- What I Do — Forest Green -->
+    <div id="work" class="bg-[#0D2B22]">
+      <div class="container mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-display text-[#D4F53C] mb-4">What I do</h2>
+          <p class="text-lg text-[#9FCEBE] font-mono max-w-2xl mx-auto">
+            I build AI systems — and I've been doing it long enough to know what actually works and what doesn't.
           </p>
         </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
-          <h3 class="text-xl font-code text-[#0D2B22] mb-3">AI Agents</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Multi-step reasoning, self-correction, persistent memory. I've shipped agents that run autonomously across real business workflows.
-          </p>
+        <div class="max-w-3xl mx-auto mb-12">
+          <div class="p-8 rounded-2xl bg-[#1A4435]">
+            <p class="text-[#9FCEBE] font-mono text-base leading-relaxed">
+              I co-founded <a href="https://www.riverborn.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#D4F53C] border-b border-[#D4F53C]/30 hover:border-[#D4F53C] transition-all">Riverborn</a> because I wanted to build AI that earns its keep — systems that run in production, handle real load, and actually solve the problem they were built for.
+            </p>
+            <p class="text-[#9FCEBE] font-mono text-base leading-relaxed mt-4">
+              I run operations, drive product decisions, stay close to clients, and personally make sure nothing ships unless it's ready. The rule I hold myself to: if I haven't run it on something we own first, it doesn't go to a client.
+            </p>
+          </div>
         </div>
-        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
-          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Voice AI</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            LLM-native voice on real telephony. Sub-2s latency. I built Vocalo.ai from scratch — I know this space from the inside.
-          </p>
-        </div>
-        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
-          <h3 class="text-xl font-code text-[#0D2B22] mb-3">RAG & Chatbots</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Retrieval systems that actually retrieve the right thing. I've built and maintained these across multiple live products.
-          </p>
-        </div>
-        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
-          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Generative AI</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Image, audio, video generation pipelines. I've shipped creative AI products to tens of thousands of users.
-          </p>
-        </div>
-        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
-          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Multi-Agent Systems</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Orchestrated agent networks where planning, execution, and feedback work together. I architect these end to end.
-          </p>
-        </div>
-        <div class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1">
-          <h3 class="text-xl font-code text-[#0D2B22] mb-3">Operations & Delivery</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Not just building — running. I manage teams, set delivery standards, and stay in the room until the thing actually works.
-          </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-xl font-code text-[#D4F53C] mb-3">AI Agents</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Multi-step reasoning, self-correction, persistent memory. I've shipped agents that run autonomously across real business workflows.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-xl font-code text-[#D4F53C] mb-3">Voice AI</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">LLM-native voice on real telephony. Sub-2s latency. I built Vocalo.ai from scratch — I know this space from the inside.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-xl font-code text-[#D4F53C] mb-3">RAG &amp; Chatbots</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Retrieval systems that actually retrieve the right thing. I've built and maintained these across multiple live products.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-xl font-code text-[#D4F53C] mb-3">Generative AI</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Image, audio, video generation pipelines. I've shipped creative AI products to tens of thousands of users.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-xl font-code text-[#D4F53C] mb-3">Multi-Agent Systems</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Orchestrated agent networks where planning, execution, and feedback work together. I architect these end to end.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-[#1A4435] hover:border-[#D4F53C]/30 border border-[#1A4435] transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-xl font-code text-[#D4F53C] mb-3">Operations &amp; Delivery</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">Not just building — running. I manage teams, set delivery standards, and stay in the room until the thing actually works.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Values & Philosophy Section -->
-    <div id="thinking" class="container mx-auto px-4 py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
-          How I think
-        </h2>
-        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
-          These aren't frameworks I read somewhere. They're what I've learned from actually building things.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">01</div>
-          <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Prove it on yourself first</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            If we haven't run it on our own products, we don't sell it.
+    <!-- How I Think — Lime -->
+    <div id="thinking" class="bg-[#D4F53C]">
+      <div class="container mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-display text-[#0D2B22] mb-4">How I think</h2>
+          <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+            These aren't frameworks I read somewhere. They're what I've learned from actually building things.
           </p>
         </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">02</div>
-          <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Ship, then improve</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Real usage teaches more in a week than six months of planning ever could.
-          </p>
-        </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">03</div>
-          <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Say what you actually think</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Honest feedback early costs less than polite silence later.
-          </p>
-        </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">04</div>
-          <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Curiosity over credentials</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            The best work comes from wanting to understand, not just wanting to qualify.
-          </p>
-        </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">05</div>
-          <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Consistency is the skill</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Showing up when it's slow matters more than performing when conditions are good.
-          </p>
-        </div>
-
-        <div
-          class="group p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">06</div>
-          <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Context changes everything</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            The right solution depends on the actual problem — there are no universal answers.
-          </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">01</div>
+            <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Prove it on yourself first</h3>
+            <p class="text-[#1A4435] font-mono text-sm leading-relaxed">If we haven't run it on our own products, we don't sell it.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">02</div>
+            <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Ship, then improve</h3>
+            <p class="text-[#1A4435] font-mono text-sm leading-relaxed">Real usage teaches more in a week than six months of planning ever could.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">03</div>
+            <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Say what you actually think</h3>
+            <p class="text-[#1A4435] font-mono text-sm leading-relaxed">Honest feedback early costs less than polite silence later.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">04</div>
+            <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Curiosity over credentials</h3>
+            <p class="text-[#1A4435] font-mono text-sm leading-relaxed">The best work comes from wanting to understand, not just wanting to qualify.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">05</div>
+            <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Consistency is the skill</h3>
+            <p class="text-[#1A4435] font-mono text-sm leading-relaxed">Showing up when it's slow matters more than performing when conditions are good.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1">
+            <div class="text-2xl font-bold font-code text-[#D4F53C] bg-[#0D2B22] inline-block px-2 mb-3">06</div>
+            <h3 class="text-lg font-bold font-code text-[#0D2B22] mb-2">Context changes everything</h3>
+            <p class="text-[#1A4435] font-mono text-sm leading-relaxed">The right solution depends on the actual problem — there are no universal answers.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Beyond the Screen Section -->
-    <div class="container mx-auto px-4 py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-display font-bold text-[#0D2B22] mb-4">
-          Beyond the Screen
-        </h2>
-        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
-          What I actually think about when I'm not building things
-        </p>
-      </div>
-
-      <div class="max-w-3xl mx-auto mb-16">
-        <div class="p-8 rounded-2xl bg-white border border-[#E8EDE6] shadow-[0_1px_8px_rgba(13,43,34,0.07)]">
-          <p class="text-[#1A4435] font-mono text-base leading-relaxed">
-            I haven't left Bangladesh yet — but I've been exploring it properly, and there's
-            more here than most people realise. Hill tracks in Bandarban, rivers that cut
-            through everything, ancient mosques and ruins that most people drive past without
-            stopping. I'm still working through what's on my doorstep before I move further.
-          </p>
-          <p class="text-[#1A4435] font-mono text-base leading-relaxed mt-4">
-            But the list is building. Mountains, ancient civilizations, coastlines of other
-            seas — the world has a lot of places I intend to get to. I'm drawn to nature
-            that makes you feel small and history that makes you feel connected to something
-            much longer than your own lifetime. The two together are hard to beat.
+    <!-- Beyond the Screen — Forest Green -->
+    <div class="bg-[#0D2B22]">
+      <div class="container mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-display text-[#D4F53C] mb-4">Beyond the Screen</h2>
+          <p class="text-lg text-[#9FCEBE] font-mono max-w-2xl mx-auto">
+            What I actually think about when I'm not building things
           </p>
         </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Travel -->
-        <div
-          class="group p-8 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-5xl mb-5">✈️</div>
-          <h3 class="text-2xl font-bold font-code text-[#0D2B22] mb-3">Travel</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Haven't gone international yet, but it's coming. I've been exploring Bangladesh
-            first — and it's a bigger country than most people give it credit for. The plan
-            is to keep moving outward from here: neighbouring countries, then further. I'm
-            not interested in the obvious tourist circuit. I want to find the places one stop
-            further down the line, the regions most people skip, the towns that still feel
-            like themselves. Those are usually where the real character is.
-          </p>
+        <div class="max-w-3xl mx-auto mb-16">
+          <div class="p-8 rounded-2xl bg-[#1A4435]">
+            <p class="text-[#9FCEBE] font-mono text-base leading-relaxed">
+              I haven't left Bangladesh yet — but I've been exploring it properly, and there's
+              more here than most people realise. Hill tracks in Bandarban, rivers that cut
+              through everything, ancient mosques and ruins that most people drive past without
+              stopping. I'm still working through what's on my doorstep before I move further.
+            </p>
+            <p class="text-[#9FCEBE] font-mono text-base leading-relaxed mt-4">
+              But the list is building. Mountains, ancient civilizations, coastlines of other
+              seas — the world has a lot of places I intend to get to. I'm drawn to nature
+              that makes you feel small and history that makes you feel connected to something
+              much longer than your own lifetime. The two together are hard to beat.
+            </p>
+          </div>
         </div>
-
-        <!-- Ancient History -->
-        <div
-          class="group p-8 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-5xl mb-5">🏛️</div>
-          <h3 class="text-2xl font-bold font-code text-[#0D2B22] mb-3">Ancient History</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            This one started close to home. Bangladesh has Mahasthangarh — one of the oldest
-            archaeological sites in the subcontinent, dating back to the 3rd century BC.
-            The Mosque City of Bagerhat, a UNESCO site with sixty domes. Paharpur, a Buddhist
-            monastery that's been here since the 8th century. Sonargaon, an ancient capital
-            most people have never heard of — that one is on my list. I want to get to all
-            of these properly, not just pass through. And beyond Bangladesh — the Middle East,
-            Central Asia, the ancient world — that's further down the list but it's there.
-          </p>
-        </div>
-
-        <!-- Hills & Mountains -->
-        <div
-          class="group p-8 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-5xl mb-5">⛰️</div>
-          <h3 class="text-2xl font-bold font-code text-[#0D2B22] mb-3">Hills & Mountains</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            The Chittagong Hill Tracts pull me in — Bandarban, Rangamati, those long roads
-            that go into the hills and keep going. Keokradong, the highest accessible peak
-            in Bangladesh, and Sajek Valley are both on my list. There's a specific quality
-            of silence you find only at elevation: no traffic, no notifications, just wind
-            and distance. It resets something. The Himalayas are a bigger ambition for later.
-            The Sylhet tea gardens are also somewhere I want to get to — a different kind
-            of landscape but the same pull.
-          </p>
-        </div>
-
-        <!-- Seas & Rivers -->
-        <div
-          class="group p-8 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <div class="text-5xl mb-5">🌊</div>
-          <h3 class="text-2xl font-bold font-code text-[#0D2B22] mb-3">Seas & Rivers</h3>
-          <p class="text-[#1A4435] font-mono text-sm leading-relaxed">
-            Growing up in Bangladesh means growing up alongside rivers — the Padma, the Meghna,
-            the Jamuna. Water is in the DNA of this landscape. Cox's Bazar has the longest
-            natural sea beach in the world and it's right here. Kuakata — where you can watch
-            both sunrise and sunset over the sea — is on the list. Rivers and coastlines have
-            a pace that's completely different from cities or mountains. They remind you that
-            the world keeps moving whether you're watching or not. I find that useful.
-          </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="text-5xl mb-5">✈️</div>
+            <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Travel</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
+              Haven't gone international yet, but it's coming. I've been exploring Bangladesh
+              first — and it's a bigger country than most people give it credit for. The plan
+              is to keep moving outward from here: neighbouring countries, then further. I'm
+              not interested in the obvious tourist circuit. I want to find the places one stop
+              further down the line, the regions most people skip, the towns that still feel
+              like themselves. Those are usually where the real character is.
+            </p>
+          </div>
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="text-5xl mb-5">🏛️</div>
+            <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Ancient History</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
+              This one started close to home. Bangladesh has Mahasthangarh — one of the oldest
+              archaeological sites in the subcontinent, dating back to the 3rd century BC.
+              The Mosque City of Bagerhat, a UNESCO site with sixty domes. Paharpur, a Buddhist
+              monastery that's been here since the 8th century. Sonargaon, an ancient capital
+              most people have never heard of — that one is on my list. I want to get to all
+              of these properly, not just pass through. And beyond Bangladesh — the Middle East,
+              Central Asia, the ancient world — that's further down the list but it's there.
+            </p>
+          </div>
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="text-5xl mb-5">⛰️</div>
+            <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Hills &amp; Mountains</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
+              The Chittagong Hill Tracts pull me in — Bandarban, Rangamati, those long roads
+              that go into the hills and keep going. Keokradong, the highest accessible peak
+              in Bangladesh, and Sajek Valley are both on my list. There's a specific quality
+              of silence you find only at elevation: no traffic, no notifications, just wind
+              and distance. It resets something. The Himalayas are a bigger ambition for later.
+              The Sylhet tea gardens are also somewhere I want to get to — a different kind
+              of landscape but the same pull.
+            </p>
+          </div>
+          <div class="group p-8 rounded-2xl bg-[#1A4435] border border-[#1A4435] hover:border-[#D4F53C]/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="text-5xl mb-5">🌊</div>
+            <h3 class="text-2xl font-bold font-code text-[#D4F53C] mb-3">Seas &amp; Rivers</h3>
+            <p class="text-[#9FCEBE] font-mono text-sm leading-relaxed">
+              Growing up in Bangladesh means growing up alongside rivers — the Padma, the Meghna,
+              the Jamuna. Water is in the DNA of this landscape. Cox's Bazar has the longest
+              natural sea beach in the world and it's right here. Kuakata — where you can watch
+              both sunrise and sunset over the sea — is on the list. Rivers and coastlines have
+              a pace that's completely different from cities or mountains. They remind you that
+              the world keeps moving whether you're watching or not. I find that useful.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Projects Section -->
-    <div id="projects" class="container mx-auto px-4 py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
-          Things I've built
-        </h2>
-        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
-          Every one of these is live, used by real people, and something I personally had a hand in shipping.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div
-          v-for="project in projects"
-          :key="project.name"
-          class="group relative p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
-        >
-          <!-- Logo -->
-          <div class="mb-4">
-            <img
-              v-if="project.logo"
-              :src="project.logo"
-              :alt="project.name + ' logo'"
-              class="h-10 w-auto max-w-[7rem] rounded-lg object-contain"
-            />
-            <div
-              v-else
-              class="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold font-code"
-              style="background-color: #0D2B22; color: #D4F53C;"
-            >
-              {{ project.name[0] }}
+    <!-- Things I've Built — Lime -->
+    <div id="projects" class="bg-[#D4F53C]">
+      <div class="container mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-display text-[#0D2B22] mb-4">Things I've built</h2>
+          <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
+            Every one of these is live, used by real people, and something I personally had a hand in shipping.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            v-for="project in projects"
+            :key="project.name"
+            class="group relative p-6 rounded-2xl bg-white border border-[#0D2B22]/10 hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.1)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.15)] hover:-translate-y-1"
+          >
+            <div class="mb-4">
+              <img
+                v-if="project.logo"
+                :src="project.logo"
+                :alt="project.name + ' logo'"
+                class="h-10 w-auto max-w-[7rem] rounded-lg object-contain"
+              />
+              <div
+                v-else
+                class="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold font-code"
+                style="background-color: #0D2B22; color: #D4F53C;"
+              >
+                {{ project.name[0] }}
+              </div>
+            </div>
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold font-code text-[#0D2B22]">{{ project.name }}</h3>
+              <a
+                :href="project.link"
+                target="_blank"
+                class="text-[#0D2B22] hover:text-[#D4F53C] hover:bg-[#0D2B22] transition-colors duration-300 rounded p-1"
+                @click="trackEvent('project_click', { project_name: project.name, project_url: project.link })"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+            <p class="text-[#1A4435] font-mono mb-4">{{ project.description }}</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tag in project.tags"
+                :key="tag"
+                class="px-3 py-1 rounded-none text-sm font-mono bg-[#F2FFEE] border border-[#0D2B22]/10 text-[#0D2B22]"
+              >
+                {{ tag }}
+              </span>
             </div>
           </div>
-          <div class="flex justify-between items-start mb-3">
-            <h3 class="text-xl font-bold font-code text-[#0D2B22]">
-              {{ project.name }}
-            </h3>
-            <a
-              :href="project.link"
-              target="_blank"
-              class="text-[#0D2B22] hover:text-[#D4F53C] hover:bg-[#0D2B22] transition-colors duration-300 rounded p-1"
-              @click="trackEvent('project_click', { project_name: project.name, project_url: project.link })"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </a>
-          </div>
-          <p class="text-[#1A4435] font-mono mb-4">{{ project.description }}</p>
-          <div class="flex flex-wrap gap-2">
-            <span
-              v-for="tag in project.tags"
-              :key="tag"
-              class="px-3 py-1 rounded-none text-sm font-mono bg-[#F2FFEE] border border-[#E8EDE6] text-[#0D2B22]"
-            >
-              {{ tag }}
-            </span>
-          </div>
         </div>
       </div>
     </div>
 
-    <!-- Contact -->
-    <div id="contact" class="container mx-auto px-4 py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-display text-[#0D2B22] mb-4">
-          Say hello
-        </h2>
-        <p class="text-lg text-[#1A4435] font-mono max-w-2xl mx-auto">
-          I read every message. If something I've built or written resonates with you — I'd genuinely like to hear it.
-        </p>
-      </div>
-      <div class="max-w-2xl mx-auto">
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          class="space-y-6"
-          @submit="handleSubmit"
-        >
-          <input
-            type="hidden"
-            name="access_key"
-            value="5fffc86b-15f6-4f81-9a4c-9fee9d5f4b06"
-          />
-
-          <div>
-            <input
-              name="name"
-              type="text"
-              placeholder="Name"
-              class="w-full p-4 rounded-xl bg-white border border-[#E8EDE6] text-[#0D2B22] font-mono placeholder-[#9FCEBE] focus:border-[#0D2B22] focus:outline-none transition-colors duration-200"
-              required
-            />
-          </div>
-          <div>
-            <input
-              name="email"
-              type="email"
-              placeholder="Email"
-              class="w-full p-4 rounded-xl bg-white border border-[#E8EDE6] text-[#0D2B22] font-mono placeholder-[#9FCEBE] focus:border-[#0D2B22] focus:outline-none transition-colors duration-200"
-              required
-            />
-          </div>
-          <div>
-            <textarea
-              name="message"
-              placeholder="Message"
-              rows="4"
-              class="w-full p-4 rounded-xl bg-white border border-[#E8EDE6] text-[#0D2B22] font-mono placeholder-[#9FCEBE] focus:border-[#0D2B22] focus:outline-none transition-colors duration-200"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="w-full p-4 rounded-none bg-[#0D2B22] border border-[#0D2B22] text-[#D4F53C] font-code hover:bg-[#1A4435] transition-all duration-300 text-xl shadow-sm hover:shadow-md"
-            @click="trackEvent('cta_click', { cta_label: 'Send Message' })"
+    <!-- Say Hello — Forest Green -->
+    <div id="contact" class="bg-[#0D2B22]">
+      <div class="container mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-display text-[#D4F53C] mb-4">Say hello</h2>
+          <p class="text-lg text-[#9FCEBE] font-mono max-w-2xl mx-auto">
+            I read every message. If something I've built or written resonates with you — I'd genuinely like to hear it.
+          </p>
+        </div>
+        <div class="max-w-2xl mx-auto">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="space-y-6"
+            @submit="handleSubmit"
           >
-            Send Message
-          </button>
-        </form>
+            <input type="hidden" name="access_key" value="5fffc86b-15f6-4f81-9a4c-9fee9d5f4b06" />
+            <div>
+              <input
+                name="name"
+                type="text"
+                placeholder="Name"
+                class="w-full p-4 rounded-xl bg-[#1A4435] border border-[#1A4435] text-[#F2FFEE] font-mono placeholder-[#9FCEBE]/60 focus:border-[#D4F53C] focus:outline-none transition-colors duration-200"
+                required
+              />
+            </div>
+            <div>
+              <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                class="w-full p-4 rounded-xl bg-[#1A4435] border border-[#1A4435] text-[#F2FFEE] font-mono placeholder-[#9FCEBE]/60 focus:border-[#D4F53C] focus:outline-none transition-colors duration-200"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="4"
+                class="w-full p-4 rounded-xl bg-[#1A4435] border border-[#1A4435] text-[#F2FFEE] font-mono placeholder-[#9FCEBE]/60 focus:border-[#D4F53C] focus:outline-none transition-colors duration-200"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full p-4 rounded-none bg-[#D4F53C] border border-[#D4F53C] text-[#0D2B22] font-code hover:bg-[#c9eb30] transition-all duration-300 text-xl shadow-sm hover:shadow-md font-bold"
+              @click="trackEvent('cta_click', { cta_label: 'Send Message' })"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 
-    <div class="container mx-auto px-4 py-8">
-      <div class="max-w-4xl mx-auto">
-        <div class="flex justify-center gap-6 mt-8">
+    <!-- Footer — Forest Green -->
+    <div class="bg-[#0D2B22] border-t border-[#1A4435]">
+      <div class="container mx-auto px-4 py-10">
+        <div class="flex justify-center gap-6">
           <a
             href="https://github.com/nasiruddin01"
             target="_blank"
-            class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
             @click="trackEvent('social_click', { platform: 'github' })"
           >
             <i class="fab fa-github text-2xl"></i>
@@ -460,7 +361,7 @@
           <a
             href="https://linkedin.com/in/nasir01/"
             target="_blank"
-            class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
             @click="trackEvent('social_click', { platform: 'linkedin' })"
           >
             <i class="fab fa-linkedin text-2xl"></i>
@@ -468,7 +369,7 @@
           <a
             href="https://twitter.com/nasir_uddin01"
             target="_blank"
-            class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
             @click="trackEvent('social_click', { platform: 'twitter' })"
           >
             <i class="fab fa-twitter text-2xl"></i>
@@ -476,7 +377,7 @@
           <a
             href="https://instagram.com/md.nasir.uddin1995/"
             target="_blank"
-            class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
             @click="trackEvent('social_click', { platform: 'facebook' })"
           >
             <i class="fab fa-facebook text-2xl"></i>
@@ -484,7 +385,7 @@
           <a
             href="https://instagram.com/nasiruddin.md"
             target="_blank"
-            class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
             @click="trackEvent('social_click', { platform: 'instagram' })"
           >
             <i class="fab fa-instagram text-2xl"></i>
@@ -493,20 +394,20 @@
             href="https://www.youtube.com/@nasheruddinofficial"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            class="text-[#9FCEBE] hover:text-[#D4F53C] transition-all duration-300"
             @click="trackEvent('social_click', { platform: 'youtube' })"
           >
             <i class="fab fa-youtube text-2xl"></i>
           </a>
         </div>
-
-        <div class="text-center mt-8">
-          <p class="text-[#1A4435] font-mono text-sm">
+        <div class="text-center mt-6">
+          <p class="text-[#9FCEBE]/60 font-mono text-sm">
             © {{ new Date().getFullYear() }} Nasher Uddin. All rights reserved.
           </p>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
