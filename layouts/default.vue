@@ -1,11 +1,6 @@
 <template>
-    <div class="flex items-center justify-center min-h-screen bg-black-500">
-        <!-- Animated Dots Background -->
-
-
-        <!-- Main Content -->
+    <div class="min-h-screen" style="background-color: #F2FFEE">
         <div class="w-full">
-            <!-- <Navbar /> -->
             <slot />
         </div>
     </div>
