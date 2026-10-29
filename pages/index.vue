@@ -143,6 +143,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="inline-block mt-6 px-6 py-3 bg-[#0D2B22] text-[#D4F53C] font-code text-xl hover:bg-[#1A4435] transition-all duration-300"
+            @click="trackEvent('cta_click', { cta_label: 'Visit Riverborn', destination: 'https://www.riverborn.com' })"
           >
             Visit Riverborn →
           </a>
@@ -436,6 +437,7 @@
               :href="project.link"
               target="_blank"
               class="text-[#0D2B22] hover:text-[#D4F53C] hover:bg-[#0D2B22] transition-colors duration-300 rounded p-1"
+              @click="trackEvent('project_click', { project_name: project.name, project_url: project.link })"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -520,6 +522,7 @@
           <button
             type="submit"
             class="w-full p-4 rounded-none bg-[#0D2B22] border border-[#0D2B22] text-[#D4F53C] font-code hover:bg-[#1A4435] transition-all duration-300 text-xl shadow-sm hover:shadow-md"
+            @click="trackEvent('cta_click', { cta_label: 'Send Message' })"
           >
             Send Message
           </button>
@@ -534,6 +537,7 @@
             href="https://github.com/nasiruddin01"
             target="_blank"
             class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            @click="trackEvent('social_click', { platform: 'github' })"
           >
             <i class="fab fa-github text-2xl"></i>
           </a>
@@ -541,6 +545,7 @@
             href="https://linkedin.com/in/nasir01/"
             target="_blank"
             class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            @click="trackEvent('social_click', { platform: 'linkedin' })"
           >
             <i class="fab fa-linkedin text-2xl"></i>
           </a>
@@ -548,6 +553,7 @@
             href="https://twitter.com/nasir_uddin01"
             target="_blank"
             class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            @click="trackEvent('social_click', { platform: 'twitter' })"
           >
             <i class="fab fa-twitter text-2xl"></i>
           </a>
@@ -555,6 +561,7 @@
             href="https://instagram.com/md.nasir.uddin1995/"
             target="_blank"
             class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            @click="trackEvent('social_click', { platform: 'facebook' })"
           >
             <i class="fab fa-facebook text-2xl"></i>
           </a>
@@ -562,6 +569,7 @@
             href="https://instagram.com/nasiruddin.md"
             target="_blank"
             class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            @click="trackEvent('social_click', { platform: 'instagram' })"
           >
             <i class="fab fa-instagram text-2xl"></i>
           </a>
@@ -570,6 +578,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="text-[#0D2B22] hover:text-[#1A4435] transition-all duration-300"
+            @click="trackEvent('social_click', { platform: 'youtube' })"
           >
             <i class="fab fa-youtube text-2xl"></i>
           </a>
@@ -722,7 +731,14 @@ onMounted(() => {
   typeText();
 });
 
+const trackEvent = (eventName, params = {}) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, params)
+  }
+}
+
 const handleSubmit = async (e) => {
+  e.preventDefault()
   const form = e.target;
   const formData = new FormData(form);
 
@@ -734,6 +750,7 @@ const handleSubmit = async (e) => {
     const data = await response.json();
 
     if (data.success) {
+      trackEvent('form_submit', { form_name: 'contact' })
       alert("Message sent successfully!");
       form.reset();
     } else {
