@@ -412,8 +412,24 @@
           :key="project.name"
           class="group relative p-6 rounded-2xl bg-white border border-[#E8EDE6] hover:border-[#0D2B22]/30 transition-all duration-300 shadow-[0_1px_8px_rgba(13,43,34,0.07)] hover:shadow-[0_8px_24px_rgba(13,43,34,0.12)] hover:-translate-y-1"
         >
+          <!-- Logo -->
+          <div class="mb-4">
+            <img
+              v-if="project.logo"
+              :src="project.logo"
+              :alt="project.name + ' logo'"
+              class="h-10 w-auto max-w-[7rem] rounded-lg object-contain"
+            />
+            <div
+              v-else
+              class="w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold font-code"
+              style="background-color: #0D2B22; color: #D4F53C;"
+            >
+              {{ project.name[0] }}
+            </div>
+          </div>
           <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold font-code text-[#0D2B22]">
+            <h3 class="text-xl font-bold font-code text-[#0D2B22]">
               {{ project.name }}
             </h3>
             <a
@@ -423,7 +439,7 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -573,6 +589,7 @@
 const projects = [
   {
     name: "Vocalo.ai",
+    logo: "/logos/vocalo.svg",
     description:
       "Gamify language learning with immersive AI conversations, personalised curriculum, and real-time comprehensive feedback.",
     tags: ["LLM", "OpenAI", "TTS", "STT"],
@@ -580,6 +597,7 @@ const projects = [
   },
   {
     name: "SketchToImage",
+    logo: "/logos/sketchtoimage.svg",
     description:
       "Turn simple sketches into stunning, photorealistic artwork using AI diffusion models.",
     tags: ["Stable Diffusion", "ControlNet", "Image To Video"],
@@ -587,6 +605,7 @@ const projects = [
   },
   {
     name: "HeyLuna.ai",
+    logo: "/logos/heyluna.svg",
     description:
       "Experience natural conversations with an expressive 3D AI assistant that sees, hears, and understands.",
     tags: ["LLM", "RAG", "Vector DB", "Chatbot"],
@@ -594,6 +613,7 @@ const projects = [
   },
   {
     name: "PhotoFoxAI",
+    logo: "/logos/photofoxai.svg",
     description:
       "Generate professional-quality product photography and content without traditional photography equipment.",
     tags: ["Flux", "Diffusion", "Image To Image"],
@@ -601,6 +621,7 @@ const projects = [
   },
   {
     name: "QuizMaker.ai",
+    logo: "/logos/quizmaker.png",
     description:
       "Create interactive quizzes and tests with AI-powered question generation and evaluation.",
     tags: ["LLM", "OpenAI", "Claude", "Content Engine"],
@@ -608,6 +629,7 @@ const projects = [
   },
   {
     name: "AiStoryGen",
+    logo: "/logos/aistorygen.png",
     description:
       "Craft immersive stories with AI-generated narratives, visuals, and audio experiences.",
     tags: ["LLM", "Diffusion", "Synthetix"],
@@ -615,6 +637,7 @@ const projects = [
   },
   {
     name: "InvoiceAgent.ai",
+    logo: "/logos/invoiceagent.png",
     description:
       "AI-powered invoice automation tool that extracts, processes, and manages invoices from emails and manual uploads with 99.9% accuracy.",
     tags: ["OpenAI", "OAuth2", "VectorDB", "NLP Search", "Real-time"],
@@ -622,6 +645,7 @@ const projects = [
   },
   {
     name: "Wordrocket.ai",
+    logo: "/logos/wordrocket.png",
     description:
       "Create professional content across text, image, video, and audio with one powerful AI platform.",
     tags: ["LLM", "OpenAI", "Claude", "Content Engine"],
