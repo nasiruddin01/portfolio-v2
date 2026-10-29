@@ -21,7 +21,7 @@ gtag('config', 'G-54QJCHHPPL');`,
       link: [
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap",
         },
         // Add these favicon-related links
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
